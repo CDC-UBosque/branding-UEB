@@ -1,0 +1,137 @@
+/* ---------------------------------- Cards styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.cards-1{
+	@include display-grid;
+	@include grid-parent-4-columns (1fr, 1fr, 1fr, 1fr);
+	grid-gap: 2rem;
+	
+	@media only screen and (max-width: $breakpoint_3){
+		@include grid-parent-2-columns (1fr, 1fr);
+	}
+	
+	@media only screen and (max-width: $breakpoint_4){
+		@include grid-parent-1-columns (1fr);
+	}
+	
+	.container-cards{
+		text-align: center;
+		
+		&:nth-child(1){
+			@include grid-child-column (1, 2);
+			@include grid-child-row (1, 2);
+	
+		}
+		
+		&:nth-child(2){
+			@include grid-child-column (2, 3);
+			@include grid-child-row (1, 2);
+			
+			@media only screen and (max-width: $breakpoint_4){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3);
+			}
+			
+		}
+		
+		&:nth-child(3){
+			@include grid-child-column (3, 4);
+			@include grid-child-row (1, 2);
+			
+			@media only screen and (max-width: $breakpoint_3){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3);
+			}
+			
+			@media only screen and (max-width: $breakpoint_4){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (3, 4);
+			}
+			
+		}
+		
+		&:nth-child(4){
+			@include grid-child-column (4, 5);
+			@include grid-child-row (1, 2);
+			
+			@media only screen and (max-width: $breakpoint_3){
+				@include grid-child-column (2, 3);
+				@include grid-child-row (2, 3);
+			}
+			
+			@media only screen and (max-width: $breakpoint_4){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (4, 5);
+			}
+			
+		}
+		
+		p{
+			margin: 1rem 0;
+		}
+		
+		a{
+			@include buton-s-green;
+			&:after{
+				display: none;
+			}
+		}
+		
+	}
+	
+}
+
+.destacado-home{
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	grid-gap: 2rem;
+	
+	@media only screen and (max-width: $breakpoint_3){
+		@include grid-parent-1-columns (1fr);
+	}
+	
+	>div{
+		@include display-grid;
+		@include grid-parent-2-columns (30%, 1fr);
+		grid-gap: 1rem;
+		
+		&:first-child{
+			@include grid-child-column (1, 2);
+			@include grid-child-row (1, 2);
+		}
+		
+		&:last-child{
+			@include grid-child-column (2, 3);
+			@include grid-child-row (1, 2);
+			
+			@media only screen and (max-width: $breakpoint_3){
+				@include grid-child-column (1, 2);
+				@include grid-child-row (2, 3);
+			}
+			
+		}
+		
+		>div:nth-child(1) {
+			img{
+				object-fit: cover;
+			}
+		}
+		
+		>div:nth-child(2){
+			
+			p{
+				margin: 1rem 0;
+			}
+			
+			a{
+				@include buton-s-green;
+				&:after{
+					display: none;
+				}
+			}
+		
+		}
+		
+	}
+	
+}

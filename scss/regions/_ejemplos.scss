@@ -1,0 +1,19 @@
+/* ---------------------------------- Big titles styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.ejemplos{
+	margin: 2rem 0;
+	@include display-grid;
+	@include grid-parent-3-columns (1fr, 1fr, 1fr);
+	grid-gap: 1rem;
+	
+	.downloads{
+		
+		.download{
+			margin-right: .5rem;
+			@include button-s-border-green;
+		}
+		
+	}
+	
+}

@@ -1,0 +1,93 @@
+doctype html
+html(lang='es')
+	head
+		meta(charset='UTF-8')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge,chrome=1')
+		meta(name='viewport' content='width=device-width, initial-scale=1.0')
+		meta(name='description' content='Políticas y lineamientos para el manejo de marca de la Universidad El Bosque')
+		meta(name='application-name' content='Universidad EL Bosque - Identidad')
+		meta(name='author' content='Centro De Diseño')
+		block title
+			title The title
+		link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css' integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T' crossorigin='anonymous')
+		link(rel='stylesheet' type='text/css' href='../../css/style.css')
+		script(src='../../js/modernizr.custom.js')
+		<!--[if IE]>
+			<script src='http://html5shiv.googlecode.com/svn/trunk/html5.js'></script>
+		<![endif]-->
+	
+	body
+		//- mixins file
+		include mixins.jade
+		
+		header
+			div.pre-header: a(href='https://www.uelbosque.edu.co' target='_blank') Ir a Universidad El Bosque
+			
+			nav.navbar.navbar-expand-lg.navbar-light
+				a.navbar-brand(href='#') 
+					img(src='../images/svg/logo-ueb.svg')
+				button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+					span.navbar-toggler-icon
+					
+				div.collapse.navbar-collapse#navbarSupportedContent
+							
+					li.nav-item.dropdown.active
+						a.nav-link.dropdown-toggle(href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Elementos de identidad
+							span.sr-only (current)
+						
+						div.dropdown-menu(aria-labelledby='navbarDropdown')
+							div.dropdown-item
+								div.destacado
+									h2 Identidad
+									a(href='../identidad/logotipo.html') Ver más
+								div.enlaces
+									a(href='../identidad/logotipo.html') Logotipo
+									a(href='#') Tipografía
+									a(href='#') Tipografía UI
+									a(href='#') Colores
+									a(href='#') Colores UI
+									a(href='#') Logotipo facultades
+						    		
+				//-form.form-inline.my-2.my-lg-0
+				//-	input.form-control.mr-sm-2(type='search' placeholder='Search' aria-label='Search')
+				//-	button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+			
+		
+		//- body block content
+		block content
+		
+		
+		footer
+			div.max_width_container
+				div
+					h4 Universidad El Bosque
+					h5 Instalaciones Bogotá
+					p
+						img(alt="Sede bogotá" src="../images/svg/bogota.svg")
+					p Av. Cra. 9 No. 131 A - 02
+						br/ Línea gratuita:
+						br/ 018000 113033
+						br/ PBX: (571) 648 9000
+						
+				div
+					h5 Instalaciones Chía
+					p
+						img(alt="Sede bogotá" src="../images/svg/chia.svg")
+					p Autopista Norte
+						br/ Km. 20 costado occidental
+						br/ Vía Chía - Bogotá
+						br/ Teléfono: 676 3110
+						br/ Línea gratuita: 018000 113033
+						br/ PBX: (571) 648 9000
+						
+				div
+					h4 Centro de Diseño
+					p Facultad de Creación y Comunicación
+						br/ PBX. (57-1) 6489000 Ext. 1311
+						br/ Calle 131 #7a 39
+				
+				div
+					p Vigilada Mineducación. Personería Jurídica otorgada mediante resolución 11153 del 4 de Agosto de 1978.
+		
+		//- Page transitions js
+		include js-body-ends.jade

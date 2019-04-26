@@ -1,0 +1,105 @@
+/* ---------------------------------- header styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+header{
+    position: sticky;
+    top: -25px;
+	z-index: 14;
+	@include max-width-container;
+	
+	.pre-header{
+		padding: 0 1rem;
+		@include bg-laterales($color_brand, $width: 100%);
+		background: $color_brand;
+		
+		a{
+			@include return_header_link_text ();
+			@include line-hover-after($color_brand_white);
+			padding-left: 1rem;
+			
+			&:before{
+				content: "";
+				position: absolute;
+				background: url('../images/svg/left-white.svg');
+				width: 6px;
+				height: 10px;
+				background-repeat: no-repeat;
+				background-size: contain;
+				left: 0;
+			}
+			
+		}
+		
+	}
+	
+	nav{
+		background: $color_brand_white;
+		@include bg-laterales($color_brand_white, $width: 100%);
+		
+		.navbar-collapse{
+			justify-content: flex-end;
+			
+			li{
+				display: inline-block;
+				margin: 0;
+				position: initial;
+				
+				.nav-link{
+					@include item-menu;
+				}
+				
+				.dropdown-menu{
+					background: $color_brand_white;
+					@include max-width-container;
+					max-width: 1180px;
+					padding: 0;
+				    border: 0;
+				    border-radius: 0;
+				    left: 0;
+				    right: 0;
+				    
+				    .dropdown-item{
+					    padding: 0;
+					    @include display-grid;
+					    @include grid-parent-2-columns (30%, 1fr);
+					    
+					    .destacado{
+						    background: $color_brand;
+						    padding: 1.5rem;
+						    text-align: center;
+						    
+						    
+						    h2{
+							    color: $color_brand_white;
+						    }
+						    
+						    a{
+							    @include button-sm-white;
+						    }
+						    
+					    }
+					    
+					    .enlaces{
+						    padding: 1.5rem;
+						     @include display-grid;
+							 @include grid-parent-2-columns (1fr, 1fr);
+							 grid-column-gap: 2rem;
+							 
+							 a{
+								 padding-bottom: 1rem;
+								 border-bottom: 1px solid $color_gray_20;
+							 }
+							 
+					    }
+					    
+				    }
+				    
+				}
+			
+			}
+			
+		}
+		
+	}
+	
+}

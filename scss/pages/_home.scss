@@ -1,0 +1,36 @@
+/* ---------------------------------- home banners -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.banner-home{
+	padding-top: 0;
+	
+	.max_width_container{
+		
+		>div{
+			background: url('../images/banners/home.jpg');
+			min-height: 360px;
+			background-size: cover;
+		    padding: 0 2rem;
+		    text-align: center;
+			@include display-grid;
+			
+			@media only screen and (max-width: $breakpoint_1){
+				margin: 0 -2rem;
+			}
+			
+			h1{
+				color: $color_brand_white;
+				justify-self: center;
+				align-self: center;
+			}
+			
+		}
+		
+		p{
+			margin: 2rem auto;
+			text-align: center;
+		}
+		
+	}
+	
+}

@@ -1,0 +1,67 @@
+/* ---------------------------------- home banners -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.si_no{
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	grid-gap: 1rem;
+	
+	.si{
+		@include grid-child-column (1, 2);
+		@include grid-child-row (1, 2);
+		
+		ul{
+			
+			list-style-type: none;
+			
+			li{
+				position: relative;
+				
+				&:before{
+					content: "";
+					position: absolute;
+					background: url('../images/svg/check.svg');
+					width: 20px;
+					height: 20px;
+					background-repeat: no-repeat;
+					background-size: contain;
+					left: -2rem;
+					top: 0;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	.no{
+		@include grid-child-column (2, 3);
+		@include grid-child-row (1, 2);
+		
+		ul{
+			
+			list-style-type: none;
+			
+			li{
+				position: relative;
+				
+				&:before{
+					content: "";
+					position: absolute;
+					background: url('../images/svg/close.svg');
+					width: 20px;
+					height: 20px;
+					background-repeat: no-repeat;
+					background-size: contain;
+					left: -2rem;
+					top: 0;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,20 @@
+/* ---------------------------------- Big titles styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.big-titles{
+	text-align: center;
+	
+	h5{
+		position: relative;
+		@include pretitle;
+		&:before{
+			content: "";
+			@include punto-title-2; 
+		}
+	}
+	
+	h1{
+		@include title;
+	}
+	
+}
