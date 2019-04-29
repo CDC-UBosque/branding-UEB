@@ -7,7 +7,29 @@
 	@include grid-parent-3-columns (1fr, 1fr, 1fr);
 	grid-gap: 1rem;
 	
+	>div{
+		//border: 1px solid;
+	}
+	
+	.classimg{
+		display: inline-block;
+		min-height: 11rem;
+	    padding: 1rem;
+		max-height: 11rem;
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	.invertido{
+		background: black; 
+	}
+	
+	h5{
+		text-align: center;
+	}
+	
 	.downloads{
+		text-align: center;
 		
 		.download{
 			margin-right: .5rem;

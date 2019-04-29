@@ -18,7 +18,7 @@ mixin paginador(linkatras, class1, Anterior, linkadelante, class2, Siguiente)
 mixin ejemplos(urlimg, alttext, classimg, titulo, enlaceSVG, enlacePNG)
 	div
 		img(src=urlimg alt=alttext class=classimg)
-		h5 titulo
+		h5= titulo
 		div.downloads
 			a.download(href=enlaceSVG)  SVG
 			a.download(href=enlacePNG)  PNG
