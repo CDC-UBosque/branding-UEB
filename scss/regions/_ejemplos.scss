@@ -1,6 +1,13 @@
 /* ---------------------------------- Big titles styles -----------------------------
 	------------------------------------------------------------------------------- */
 	
+.ejemplos-2{
+	margin: 2rem 0;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	grid-gap: 1rem;
+}
+	
 .ejemplos{
 	margin: 2rem 0;
 	@include display-grid;
