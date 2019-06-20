@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="36px" height="43px" viewBox="0 0 36 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>IconoInscripciones</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="IconoInscripciones" transform="translate(1.000000, 1.000000)" stroke="#4A4A4A">
+            <path d="M11.27818,18.1851632 L11.29898,18.1851632" id="Stroke-13" stroke-width="1.9864"></path>
+            <path d="M16.81969,18.1851632 L19.60819,18.1851632" id="Stroke-14" stroke-width="1.9864" stroke-dasharray="0.02729999963194132,5.521100282669067"></path>
+            <path d="M22.36887,18.1851632 L22.38967,18.1851632" id="Stroke-15" stroke-width="1.9864"></path>
+            <path d="M11.27818,13.0838763 L11.29898,13.0838763" id="Stroke-16" stroke-width="1.9864"></path>
+            <path d="M16.81969,13.0838763 L19.60819,13.0838763" id="Stroke-17" stroke-width="1.9864" stroke-dasharray="0.02729999963194132,5.521100282669067"></path>
+            <path d="M22.36887,13.0838763 L22.38967,13.0838763" id="Stroke-18" stroke-width="1.9864"></path>
+            <path d="M11.27818,8.34157895 L11.29898,8.34157895" id="Stroke-19" stroke-width="1.9864"></path>
+            <path d="M16.81969,8.34157895 L19.60819,8.34157895" id="Stroke-20" stroke-width="1.9864" stroke-dasharray="0.02729999963194132,5.521100282669067"></path>
+            <path d="M22.36887,8.34157895 L22.38967,8.34157895" id="Stroke-21" stroke-width="1.9864"></path>
+            <g id="Group-32" stroke-width="1.4898">
+                <path d="M26.7355,3.78265789 C26.7355,1.73755263 28.406,0.078 30.4704,0.078 C32.5348,0.078 34.2053,1.73755263 34.2053,3.78265789 C34.2053,5.83034211 32.5348,7.48989474 30.4704,7.48989474 L30.4704,21.5026053" id="Stroke-22"></path>
+                <path d="M30.4704,0.0778710526 L3.7541,0.0778710526 C1.6897,0.0778710526 0.0192,1.73742368 0.0192,3.78252895 L0.0192,38.1173447 L8.1897,38.1173447" id="Stroke-24"></path>
+                <polyline id="Stroke-26" points="26.7355 3.78510789 26.7355 38.1173447 19.9001 38.1173447"></polyline>
+                <path d="M17.97571,29.4437 C17.97571,31.7209105 16.11411,33.5648579 13.81961,33.5648579 C11.52381,33.5648579 9.66481,31.7209105 9.66481,29.4437 C9.66481,27.1664895 11.52381,25.3212526 13.81961,25.3212526 C16.11411,25.3212526 17.97571,27.1664895 17.97571,29.4437 Z" id="Stroke-28"></path>
+                <polyline id="Stroke-30" points="16.44457 32.9644789 16.44457 40.7864263 13.81857 37.2803474 11.19647 40.7864263 11.19647 32.9644789"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

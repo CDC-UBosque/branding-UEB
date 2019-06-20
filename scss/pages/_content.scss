@@ -4,7 +4,7 @@
 .content-container{
 	@include display-grid;
 	@include grid-parent-2-columns (20%, 1fr);
-	grid-gap: 2rem;
+	grid-gap: 3rem;
 	
 	.content{
 		@include grid-child-column (2, 3);

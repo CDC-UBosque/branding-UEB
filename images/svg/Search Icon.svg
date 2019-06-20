@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="19px" height="19px" viewBox="0 0 19 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Search Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Falcultad" transform="translate(-330.000000, -60.000000)" fill="#FFFFFF">
+            <path d="M342.939,67.771 C342.939,70.621 340.621,72.939 337.771,72.939 C334.921,72.939 332.584,70.621 332.584,67.771 C332.584,64.902 334.902,62.584 337.771,62.584 C340.621,62.584 342.939,64.921 342.939,67.771 L342.939,67.771 Z M344.174,72.16 C345.067,70.887 345.542,69.329 345.542,67.771 C345.542,63.477 342.065,60 337.771,60 C333.477,60 330,63.477 330,67.771 C330,72.065 333.477,75.542 337.771,75.542 C339.329,75.542 340.887,75.048 342.179,74.174 L347.005,79 L349,77.005 L344.174,72.16 Z" id="Search-Icon"></path>
+        </g>
+    </g>
+</svg>

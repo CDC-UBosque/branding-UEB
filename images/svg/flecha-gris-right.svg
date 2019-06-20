@@ -1,0 +1,28 @@
+<svg width="6" height="4" viewBox="0 0 6 4" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:figma="http://www.figma.com/figma/ns">
+<title>Elements/arrow-down</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(-11592 12268)" figma:type="canvas">
+<rect x="11592" y="-12268" width="6" height="4" fill="#FFFFFF"/>
+<mask id="mask0_alpha" mask-type="alpha">
+<path d="M 11327 -15825L 11702 -15825L 11702 -10741L 11327 -10741L 11327 -15825Z" fill="#FFFFFF"/>
+</mask>
+<g id="0. Home Portal UEB mobile-portraid" style="mix-blend-mode:normal;" mask="url(#mask0_alpha)" figma:type="frame">
+<g id="Group 5" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Tabs/tab-item" style="mix-blend-mode:normal;" figma:type="instance">
+<g id="tab-item" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Elements/arrow-down" style="mix-blend-mode:normal;" figma:type="instance">
+<g id="arrow-down" style="mix-blend-mode:normal;" figma:type="frame">
+<g id="Arrow" style="mix-blend-mode:normal;" figma:type="vector">
+<use xlink:href="#path0_fill" transform="matrix(1.83697e-16 1 1 -1.83697e-16 11592 -12268)" fill="#9B9B9B" style="mix-blend-mode:normal;"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" fill-rule="evenodd" d="M 0.934211 0L 0 0.918103L 2.11842 3L 0 5.0819L 0.934211 6L 4 3L 0.934211 0Z"/>
+</defs>
+</svg>

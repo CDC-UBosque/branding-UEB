@@ -2,10 +2,11 @@
 	------------------------------------------------------------------------------- */
 	
 header{
-    position: sticky;
     top: -25px;
 	z-index: 14;
 	@include max-width-container;
+	position: -webkit-sticky;
+	position: sticky;
 	
 	.pre-header{
 		padding: 0 1rem;

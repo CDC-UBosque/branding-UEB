@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Cerrar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Falcultad" transform="translate(-301.000000, -188.000000)" fill="#9B9B9B">
+            <path d="M311.315993,212.315993 L311.315993,213.815993 L314.315993,213.815993 L314.315993,212.315993 L314.315993,187.315993 L314.315993,185.815993 L311.315993,185.815993 L311.315993,187.315993 L311.315993,212.315993 Z M325.287911,201.53392 L326.787682,201.560098 L326.84004,198.560555 L325.340268,198.534377 L300.344076,198.098067 L298.844304,198.071888 L298.791947,201.071431 L300.291718,201.09761 L325.287911,201.53392 Z" id="Cerrar" transform="translate(312.815993, 199.815993) rotate(45.000000) translate(-312.815993, -199.815993) "></path>
+        </g>
+    </g>
+</svg>

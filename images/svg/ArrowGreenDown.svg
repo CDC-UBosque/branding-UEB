@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="10px" height="7px" viewBox="0 0 10 7" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>ArrowGreenDown</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Falcultad" transform="translate(-294.000000, -64.000000)" fill="#7BC142">
+            <path d="M297.499334,67.6655222 L302.048135,63.5485867 C302.15253,63.4541028 302.15253,63.3009093 302.048135,63.2064576 L301.544091,62.7502318 C301.493979,62.7048447 301.425975,62.6793609 301.355083,62.6793609 C301.284192,62.6793609 301.216188,62.7048447 301.166076,62.7502318 L295.924187,67.4944576 C295.819793,67.5889415 295.819793,67.7421351 295.924187,67.8365867 L301.16604,72.5808125 C301.216152,72.6261996 301.284156,72.6516835 301.355048,72.6516835 C301.425939,72.6516835 301.493943,72.6261996 301.544055,72.5808125 L302.048099,72.1245867 C302.152494,72.0301028 302.152494,71.8769093 302.048099,71.7824576 L297.499334,67.6655222 L297.499334,67.6655222 Z" id="ArrowGreenDown" transform="translate(298.986161, 67.665522) scale(-1, 1) rotate(-90.000000) translate(-298.986161, -67.665522) "></path>
+        </g>
+    </g>
+</svg>

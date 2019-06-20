@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="31px" height="18px" viewBox="0 0 31 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Acreditacion" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="acreditacion-black" transform="translate(-1084.000000, -281.000000)" stroke="#FEFEFE">
+            <g id="Banner" transform="translate(0.000000, 140.000000)">
+                <g id="Group-11" transform="translate(1042.000000, 141.000000)">
+                    <g id="Group-10" transform="translate(42.000000, 0.000000)">
+                        <g id="Group" transform="translate(15.500000, 9.000000) rotate(-270.000000) translate(-15.500000, -9.000000) translate(6.500000, -6.500000)">
+                            <polyline id="Stroke-1" stroke-linecap="round" points="12.7051 0.5 17.2931 4.546 12.8911 8.796"></polyline>
+                            <path d="M0.5,30.3095 L0.672,14.5975 C0.672,14.5975 2.213,3.8285 16.42,4.6485" id="Stroke-3"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

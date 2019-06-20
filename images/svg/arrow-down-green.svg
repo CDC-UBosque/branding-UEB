@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="22px" viewBox="0 0 15 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Elements/arrow-down-green</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Falcultad" transform="translate(-293.000000, -122.000000)" fill="#7BC142">
+            <g id="Elements/arrow-down-green" transform="translate(293.000000, 122.000000)">
+                <path d="M14.6242137,13.6983123 C14.2305847,13.2990409 13.5921976,13.2990409 13.1985685,13.6983123 L8.46784274,18.4958662 L8.46784274,1.02230483 C8.46784274,0.457747212 8.01639113,0 7.45977823,0 C6.90300403,0 6.45171371,0.457747212 6.45171371,1.02230483 L6.45171371,18.4958662 L1.7209879,13.6984758 C1.32719758,13.2992862 0.688971774,13.2992862 0.295342742,13.6984758 C-0.0984475806,14.0977472 -0.0984475806,14.7449888 0.295342742,15.1442602 L6.74695565,21.6868476 C6.94364919,21.8864015 7.20179435,21.9862602 7.45977823,21.9862602 C7.7177621,21.9862602 7.97566532,21.8864015 8.17260081,21.6868476 L14.6242137,15.1440967 C15.0179234,14.7448253 15.0179234,14.0975836 14.6242137,13.6983123 L14.6242137,13.6983123 Z" id="arrow-down-green"></path>
+            </g>
+        </g>
+    </g>
+</svg>

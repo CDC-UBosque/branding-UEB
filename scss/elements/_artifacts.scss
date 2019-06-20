@@ -1971,3 +1971,32 @@ $size:"") {
 		max-width: initial;
 	}
 }
+
+@mixin sidebar-menu-title-remove {
+	border-bottom: 1px solid #ededed;
+	color: #9b9b9b;
+	font-family: "latoregular";
+	font-size: 11px;
+	letter-spacing: 1px;
+	line-height: 13px;
+	padding: 10px 0;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+
+	a {
+		border-bottom: 1px solid rgba(123, 193, 66, 0);
+		color: inherit;
+		display: inline-block;
+		font-family: inherit;
+		background: none;
+		font-size: inherit;
+		line-height: inherit;
+		margin: 0;
+		padding: 0;
+		text-decoration: none;
+		text-transform: none;
+		transition: border 500ms ease 0s;
+		vertical-align: top;
+	}
+}

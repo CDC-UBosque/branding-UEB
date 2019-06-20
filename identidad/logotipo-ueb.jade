@@ -18,12 +18,14 @@ block content
 		div.max_width_container
 		
 			div.content-container
-			
-				div.menu-side
-					p menu side
+				
+				- var projects = [ {name: 'Introducción',link: "#sec0",} , {name: 'Logotipo usos',link: "#sec1",} , {name: 'Logotipo descargas',link: '#sec2',} , {name: 'Logotipo Vigilada Mineducación descargas',link: '#sec3',} , ]; 
+				
+				+nav
 					
 				div.content
-					h1 Introducción
+				
+					h1#sec0 Introducción
 					p La Universidad El Bosque ha sido reconocida desde su fundación por la alta calidad de sus productos y servicios, por la entrega y colaboración de su equipo y por orientar sus acciones hacia una cultura de la vida, lo cual se manifiesta en todos los espacios acompañados por el Logotipo de la Universidad.
 					p De esta forma, aunque el Logotipo mantiene un estilo clásico como atributo inherente a su historia y tradición, la marca es suficientemente flexible para adaptarse a la evolución de la misma Universidad y a las dinámicas del entorno.
 					
@@ -48,9 +50,11 @@ block content
 								li Uso incorrecto 
 					
 					div.alert.alert-primary(role="alert") Las facultades tienen su propio identificador, si necesita usar alguno por favor entre al siguiente enlace  
-						a(href='#') Logotipo facultades
-						
-					div.ejemplos
+						a(href='../identidad/logotipo-ueb-facultades.html') Logotipo facultades
+					
+					h2 Logotipo Universidad El Bosque - Usos
+					
+					div.ejemplos#sec1
 						div
 							img.classimg(src='../descargas/logo-ueb/logo-ueb-horizontal-a-dos-lineas.svg')
 							
@@ -79,9 +83,11 @@ block content
 							
 							p Es la versión más formal del Logotipo, por lo cual es común usarla en diplomas, certificados, reconocimientos, y en comunicados de Rectoría y Vicerrectorías.
 					
+					h2 Logotipo Universidad El Bosque - Descargas
+					
 					p A continuación puede encontrar nuestro logo para descargar, por favor úselo responsablemente.
 					
-					div.ejemplos
+					div.ejemplos#sec2
 						//- horizontal a dos lineas
 						+ejemplos('../descargas/logo-ueb/logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../descargas/logo-ueb/logo-ueb-horizontal-a-dos-lineas.svg', '../descargas/logo-ueb/logo-ueb-horizontal-a-dos-lineas.png')
 						
@@ -110,9 +116,19 @@ block content
 						
 						+ejemplos('../descargas/logo-ueb/logo-ueb-vertical-a-dos-lineas-invertido.svg', 'Logotipo Universidad El Bosque vertical a una linea', 'classimg invertido', 'Vertical a dos líneas', '../descargas/logo-ueb/logo-ueb-horizontal-a-dos-lineas-invertido.svg', '../descargas/logo-ueb/logo-ueb-horizontal-a-dos-lineas-invertido.png')
 						
-					h2 Logotipo Universidad El Bosque - Vigilada Mineducación
+					+accordion("sample")
+						+accordion-item-primary("Logotipo Universidad El Bosque - Vigilada Mineducación","sample","true")
+							p A continuación puede encontrar nuestro logo con el legal Vigilada Mineducación, por favor úselo responsablemente.
 					
-					p A continuación puede encontrar nuestro logo con el legal Vigilada Mineducación, por favor úselo responsablemente.
+							div.ejemplos#sec3
+								//- horizontal a dos lineas
+								+ejemplos('../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-horizontal-a-dos-lineas-vigilada.svg', 'Logotipo Universidad El Bosque Vigilada Mineducaión horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-horizontal-a-dos-lineas-vigilada.svg', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-horizontal-a-dos-lineas-vigilada.png')
+								
+								+ejemplos('../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-horizontal-a-una-linea-vigilada.svg', 'Logotipo Universidad El Bosque Vigilada Mineducaión horizontal a dos lineas', 'classimg', 'Horizontal a una línea', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-horizontal-a-una-linea-vigilada.svg', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-horizontal-a-una-linea-vigilada.png')
+								
+								+ejemplos('../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-vertical-a-una-linea-vigilada.svg', 'Logotipo Universidad El Bosque Vigilada Mineducaión horizontal a dos lineas', 'classimg', 'Vertical a una línea', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-vertical-a-una-linea-vigilada.svg', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-vertical-a-una-linea-vigilada.png')
+								
+								+ejemplos('../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-vertical-a-dos-lineas-vigilada.svg', 'Logotipo Universidad El Bosque Vigilada Mineducaión horizontal a dos lineas', 'classimg', 'Vertical a dos líneas', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-vertical-a-dos-lineas-vigilada.svg', '../descargas/logo-ueb-vigilada-mineducacion/logo-ueb-vertical-a-dos-lineas-vigilada.png')
 						
 						
 						

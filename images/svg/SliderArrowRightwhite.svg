@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="15px" height="23px" viewBox="0 0 15 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>SliderArrowRightGreen</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DetalleProducto" transform="translate(-62.000000, 0.000000)" fill="#FFFFFF">
+            <g id="Elements/arrow-down-green-basic" transform="translate(70.614746, 10.800000) scale(-1, -1) rotate(90.000000) translate(-70.614746, -10.800000) translate(59.814746, 1.185254)">
+                <g id="arrow-down-green-basic">
+                    <path d="M3.49933437,3.14026964 L8.04813514,-0.976665847 C8.15252952,-1.07114972 8.15252952,-1.22434327 8.04813514,-1.31879488 L7.54409098,-1.77502069 C7.49397882,-1.82040778 7.42597456,-1.84589165 7.35508332,-1.84589165 C7.28419209,-1.84589165 7.21618783,-1.82040778 7.16607567,-1.77502069 L1.92418744,2.96920512 C1.81979306,3.06368899 1.81979306,3.21688254 1.92418744,3.31133415 L7.16604003,8.05555996 C7.21615219,8.10094706 7.28415645,8.12643093 7.35504768,8.12643093 C7.42593892,8.12643093 7.49394318,8.10094706 7.54405533,8.05555996 L8.0480995,7.59933415 C8.15249388,7.50485028 8.15249388,7.35165673 8.0480995,7.25720512 L3.49933437,3.14026964 L3.49933437,3.14026964 Z" id="Shape" transform="translate(4.986161, 3.140270) scale(-1, 1) rotate(-90.000000) translate(-4.986161, -3.140270) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

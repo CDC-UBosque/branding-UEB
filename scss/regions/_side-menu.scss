@@ -1,0 +1,68 @@
+/* ---------------------------------- menu side styles -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.menu-side{
+	
+	#top-menu{
+		
+		top: 100px;
+		margin: 0;
+		padding: 0;
+		position: -webkit-sticky;
+		position: sticky;
+		
+		li{
+			
+			list-style-type: none;
+			position: relative;
+			
+			
+			a{
+				display: block;
+				@include sidebar-menu-title-remove;
+				@include prefix(transition, .3s all ease-out, webkit moz);
+			}
+			
+		}
+		
+		li.active{
+			
+			&:before{
+				content: "";
+			    width: 4px;
+			    height: 4px;
+			    background-color: #4A4A4A;
+			    position: absolute;
+			    left: 0;
+			    top: 18px;
+			    border-radius: 20px;
+			}
+			
+			&:after{
+				content: "";
+			    background: url(../images/svg/ArrowRightGrey.svg) no-repeat;
+			    height: 6px;
+			    width: 4px;
+			    position: absolute;
+			    top: 0;
+			    bottom: 0;
+			    right: 10px;
+			    margin: auto;
+			}
+			
+			a{
+				padding-left: 10px;
+			    padding-top: 15px;
+			    padding-bottom: 15px;
+			    font-family: "latobold";
+			    color: #4A4A4A;
+			    position: relative;
+			    padding-left: 15px;
+			}
+			
+		}
+		
+	}
+	
+}
+

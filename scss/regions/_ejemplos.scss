@@ -11,7 +11,7 @@
 .ejemplos{
 	margin: 2rem 0;
 	@include display-grid;
-	@include grid-parent-3-columns (1fr, 1fr, 1fr);
+	@include grid-parent-4-columns (1fr, 1fr, 1fr, 1fr);
 	grid-gap: 1rem;
 	
 	>div{

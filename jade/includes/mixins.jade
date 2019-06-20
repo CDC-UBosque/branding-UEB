@@ -46,55 +46,77 @@ mixin cards-img(urlimg, alttext, title, description, href, link)
 			p= description
 			a(href=href)= link 
 
-//- ---------------------------- footer ------------------------------- //
-mixin fn(name)
-	if name == "amit"
-		h2 Hello
-	else
-		h4 World
-//- +fn("amit")
+//- ---------------------------- Side menu ------------------------------- //
+									
+mixin nav
+	div.menu-side
+		ul#top-menu
+			each project in projects
+				li: a(href=project.link)= project.name
+				
+								
 
-mixin footer-block(footer)
-	if footer == "footer-pages"
-		footer.pages
-			//- Left elements
-			div.left
-				a(href='../') 
-					span Inicio
-				a(href='https://www.uelbosque.edu.co/creacion-y-comunicacion' target='_blank') 
-					span Acerca de la facultad de diseño y comunicación
-				a(href='http://masdlab.co/' target='_blank') 
-					span Masdlab
-				a(href='http://centrodiseno.unbosque.edu.co/' target='_blank') 
-					span Centro de diseño
-					
-			div.right
-				p FACULTAD DE DISEÑO Y COMUNICACIÓN UNIVERSIDAD EL BOSQUE  ·  Edificio Fundadores Av. Cra 9 No. 131 A - 02 · Línea Gratuita 018000 113033 · PBX (571) 6489000
-				a(href='https://www.facebook.com/FaCyCElBosque' target='_blank')
-					img(src="../images/svg/facebook-orange.svg" alt="Facebook")
-				a(href='https://www.instagram.com/facycelbosque' target='_blank')
-					img(src="../images/svg/instagram-orange.svg" alt="Instagram")
-				//-a(href='../index.html' target='_blank')
-					img(src="../images/svg/twitter-orange.svg" alt="Twitter")
-	else
-		//- Footer content	
-		footer.home
-			//- Left elements
-			div.left
-				a(href='../') 
-					span Inicio
-				a(href='https://www.uelbosque.edu.co/creacion-y-comunicacion' target='_blank') 
-					span Acerca de la facultad de diseño y comunicación
-				a(href='http://masdlab.co/' target='_blank') 
-					span Masdlab
-				a(href='http://centrodiseno.unbosque.edu.co/' target='_blank') 
-					span Centro de diseño
-					
-			div.right
-				p FACULTAD DE DISEÑO Y COMUNICACIÓN UNIVERSIDAD EL BOSQUE  ·  Edificio Fundadores Av. Cra 9 No. 131 A - 02 · Línea Gratuita 018000 113033 · PBX (571) 6489000
-				a(href='https://www.facebook.com/FaCyCElBosque' target='_blank')
-					img(src="images/svg/facebook-white.svg" alt="Facebook")
-				a(href='https://www.instagram.com/facycelbosque' target='_blank')
-					img(src="images/svg/instagram-white.svg" alt="Instagram")
-				//-a(href='../index.html' target='_blank')
-					img(src="images/svg/twitter-white.svg" alt="Twitter")
+//- ---------------------------- Accordion ------------------------------- //
+mixin accordion(id)
+	.panel-group(id="accordion"+id, role="tablist", aria-multiselectable="true")
+		block
+
+//- accordion-item
+mixin accordion-item(type,title,parent,expanded)
+	-var id = title.replace(/[^a-zA-Z0-9]/g,'_')
+	.panel(class="panel-"+type)
+		.panel-heading(role="tab", id="heading"+title)
+			h4.panel-title
+				a(data-toggle="collapse", data-parent="#accordion"+parent, href="#collapse"+id, aria-expanded="true" ,aria-controls="collapseOne")
+					= title
+		unless expanded
+			.panel-collapse.collapse(id="collapse"+id, role="tabpanel", aria-labelledby="heading"+title)
+				.panel-body
+					block
+		else
+			.panel-collapse.collapse.in(id="collapse"+id, role="tabpanel", aria-labelledby="heading"+title)
+				.panel-body
+					block
+
+//- accordion-item-default
+mixin accordion-item-default(title,parent,expanded)
+	+accordion-item("default",title,parent,expanded)
+		block
+
+//- accordion-item-primary
+mixin accordion-item-primary(title,parent,expanded)
+	+accordion-item("primary",title,parent,expanded)
+		block
+
+//- accordion-item-info
+mixin accordion-item-info(title,parent,expanded)
+	+accordion-item("info",title,parent,expanded)
+		block
+
+//- accordion-item-success
+mixin accordion-item-success(title,parent,expanded)
+	+accordion-item("success",title,parent,expanded)
+		block
+
+//- accordion-item-warning
+mixin accordion-item-warning(title,parent,expanded)
+	+accordion-item("warning",title,parent,expanded)
+		block
+
+//- accordion-item-danger
+mixin accordion-item-danger(title,parent,expanded)
+	+accordion-item("danger",title,parent,expanded)
+		block
+
+//- usage
+
+
+//- +accordion("sample")
+//- 	+accordion-item-default("Collapsible Group Item #1","sample","true")
+//- 		div
+//- 	+accordion-item-default("Collapsible Group Item #2","sample")
+//- 		div
+//- 	+accordion-item-default("Collapsible Group Item #3","sample")
+//- 		div
+				
+	

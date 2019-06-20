@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="57px" height="60px" viewBox="0 0 57 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>Menu</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="57" height="60" rx="28.5"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="57" height="60" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Cortes" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Falcultad" transform="translate(-288.000000, -233.000000)">
+            <g id="Menu" transform="translate(288.000000, 233.000000)">
+                <path d="M56,7 L29.497188,7 C17.075859,7 7,17.0735931 7,29.5 C7,41.9291391 17.0723342,52 29.497188,52 L56,52 L56,7 Z" id="Combined-Shape" fill="#9B9B9B"></path>
+                <path d="M29.5240463,42.5 L29.5240463,44 L32.5240463,44 L32.5240463,42.5 L32.5240463,17.5 L32.5240463,16 L29.5240463,16 L29.5240463,17.5 L29.5240463,42.5 Z M43.4959639,31.7179266 L44.9957355,31.7441052 L45.0480927,28.7445621 L43.5483211,28.7183835 L18.5521288,28.2820734 L17.0523572,28.2558948 L17,31.2554379 L18.4997715,31.2816165 L43.4959639,31.7179266 Z" id="Menu-Burger-Icon-Copy" fill="#FFFFFF"></path>
+                <use id="Background" stroke="#DDDDDD" mask="url(#mask-2)" stroke-width="2.64" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>
