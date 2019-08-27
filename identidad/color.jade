@@ -19,7 +19,7 @@ block content
 		
 			div.content-container
 				
-				- var projects = [ {name: 'Our typeface',link: "#sec0",} , {name: 'Colores principales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios',link: '#sec3',} ,]; 
+				- var projects = [ {name: 'Nuestros colores',link: "#sec0",} , {name: 'Biblioteca de muestras',link: "#descarga-bibliotecas",} , {name: 'Colores institucionales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios',link: '#sec3',} ,]; 
 				
 				+nav
 					
@@ -46,13 +46,21 @@ block content
 					p When communicating emphasis or hierarchy, use size, shape, font weight or placement in addition to color. Remember, not everyone will be able to differentiate color by itself.
 					
 					
-					+download-n-files([
-						{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Home', 'link':'index.html', 'link_title':'descargar' },
-						{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Bedroom', 'link':'index2.html', 'link_title':'descargar2' },
-					])
+					
+					div.alert.alert-primary(role="alert") No cambiar los colores de espectro una vez aplicados
 					
 					
-					h1#sec1 Colores principales
+					div.muestras-bibliotecas#descarga-bibliotecas
+						+download-n-files([
+							{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Biblioteca de muestras PANTONE®', 'link':'index.html', 'link_title':'descargar' },
+							{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Biblioteca de muestras CMYK', 'link':'index.html', 'link_title':'descargar' },
+							{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Biblioteca de muestras HEXADECIMAL', 'link':'index.html', 'link_title':'descargar' },
+						])
+					
+					
+					
+					
+					h1#sec1 Colores institucionales
 					
 					
 					div.color-info
@@ -184,56 +192,49 @@ block content
 						+card-color([
 							{'color_title':'Gris 2%', 
 							'color_ID':'gris2', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 1 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#FAFAFA', 
 							'rgb':'249 - 249 - 249'},
 							
 							{'color_title':'Gris 10%', 
 							'color_ID':'gris10', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 2 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#F7F7F7', 
 							'rgb':'247 - 247 - 247'},
 							
-							{'color_title':'Gris 10%', 
-							'color_ID':'gris10', 
-							'pantone':'347 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#F1F1F1', 
-							'rgb':'241 - 241 - 241'},
-							
 							{'color_title':'Gris 15%', 
 							'color_ID':'gris15', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 3 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#EDEDED', 
 							'rgb':'237 - 237 - 237'},
 							
 							{'color_title':'Gris 20%', 
 							'color_ID':'gris20', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 4 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#DDDDDD', 
 							'rgb':'221 - 221 - 221'},
 							
 							{'color_title':'Gris 50%', 
 							'color_ID':'gris50', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 6 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#BABBBE', 
 							'rgb':'186 - 186 - 186'},
 							
 							{'color_title':'Gris 60%', 
 							'color_ID':'gris60', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 9 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#9A9A9A', 
 							'rgb':'154 - 154 - 154'},
 							
 							{'color_title':'Gris 80%', 
 							'color_ID':'gris80', 
-							'pantone':'347 C', 
+							'pantone':'Cool Gray 11 C', 
 							'cmyk':'93 - 0 - 100 - 0', 
 							'hex':'#474747', 
 							'rgb':'71 - 71 - 71'},
