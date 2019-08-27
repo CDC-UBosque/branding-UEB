@@ -1,0 +1,97 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Logotipo Universidad El Bosque
+
+//- Content page
+block content
+				
+	//- banner
+	section.banner-home
+		div.max_width_container
+			div
+				h1 Color
+				
+	
+	section
+		div.max_width_container
+		
+			div.content-container
+				
+				- var projects = [ {name: 'Our typeface',link: "#sec0",} , {name: 'Colores principales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios',link: '#sec3',} ,]; 
+				
+				+nav
+					
+				div.content
+				
+					h1#sec0 Introducción
+					p Besides our name and emblems, the most recognizable part of our Identity system is our colors.
+					
+					h3 Use the identity colors, especially Cardinal Red
+					
+					p Consistently and appropriately using our identity colors is one of the most effective ways to make sure our communication reflects a recognizable Stanford feel. Cardinal Red has been Stanford’s official color since the University’s earliest days, and supporting colors are drawn from our campus architecture and the California landscape. Feel free to combine Identity colors for a unique feel that reflects the personality of your unit.
+						
+					h3 Don't convert a color from one color space to another
+					
+					p When working with our colors - especially Cardinal Red - start with the correct color space (and source file, where applicable) for your intended medium. Our colors will distort when unintentionally converting between CMYK or RGB/Hex (for example, saving an image for web that contains an embedded .eps version of our emblems). This is especially true for Cardinal Red which can either become too pink or too maroon. Make sure before publishing on the web or at press check that our colors - in particular Cardinal Red - are all the right hue.
+					p Use Pantone (spot color only) or CMYK for externally printed pieces, RGB for documents printed in the office, and HEX for web and digital colors. DO NOT convert between these color spaces. When you embed an .eps version of our emblems, make sure it’s the correct HEX color value BEFORE saving for web or digital.
+					
+					h3 Use enough contrast for readability
+					
+					p Colors without enough difference between them can blend together and be hard to read. Use at least 3:1 contrast ratio between foreground and background - especially for text. Similarly, take care to comply with accessibility guidelines for colorblindness (such as avoiding some color combinations like red on green). For more information or tools to test color for accessibility, refer to the SOAP website.
+					
+					h3 Don't rely on color alone
+					
+					p When communicating emphasis or hierarchy, use size, shape, font weight or placement in addition to color. Remember, not everyone will be able to differentiate color by itself.
+					
+					
+					
+					
+					
+					h1#sec1 Colores principales
+					
+					
+					div.color-info
+						//- card-colors(color, pantone, cmyk, hex, rgb)
+						+card-colors('Roble', 'roble', '5743 C', '68 - 49 - 86 - 53', '#404827', '64 - 72 - 39')
+						+card-colors('Eucalipto', 'eucalipto', '327 C', '100 - 3 - 59 - 14', '#008776', '0 - 135 - 118')
+						+card-colors('Acacia', 'acacia', '376 C', '54 - 0 - 100 - 0', '#81bb26', '129 - 186 - 38')
+						+card-colors('Heliconia', 'heliconia', '715 C', '0 - 60 - 100 - 0', '#f08013', '240 - 128 - 19')
+					
+					
+					h1#sec2 Colores departamentos y facultades
+					
+					div.color-info
+						+card-colors('Departamento de Bioética', 'depbioetica', '347 C', '93 - 0 - 100 - 0', '#009a44', '0 - 154 - 68')
+						+card-colors('Departamento de Humanidades', 'dephumanidades', '1955 C', '9 - 100 - 54 - 43', '#8a1538', '138 - 21 - 56')
+						+card-colors('Facultad de Ciencias', 'facciencias', '377 C', '50 - 1 - 100 - 20', '#7a9a01', '122 - 154 - 1')
+						+card-colors('Facultad de Ciencias Administrativas y Económicas', 'faccienciaseconomicas', '302 C', '100 - 48 - 12 - 58', '#003b5c', '0 - 59 - 92')
+						+card-colors('Facultad de Ciencias Políticas y Jurídicas', 'faccienciaspoliticas', '3005 C', '100 - 31 - 0 - 0', '#0077c8', '0 - 119 - 200')
+						+card-colors('Facultad de Creación y Comunicación', 'faccreacion', '226 C', '0 - 100 - 2 - 0', '#d0006f', '208 - 0 - 100')
+						+card-colors('Facultad de Educación', 'faceducacion', '7472 C', '54 - 0 - 27 - 0', '#5cb8b2', '92 - 184 - 178')
+						+card-colors('Facultad de Enfermería', 'facenfermeria', '292 C', '59 - 11 - 0 - 0', '#69b3e7', '105 - 179 - 231')
+						+card-colors('Facultad de Ingeniería', 'facingenieria', '7714 C', '96 - 0 - 30 - 45', '#007680', '0 - 118 - 128')
+						+card-colors('Facultad de Medicina', 'facmedicina', '716 C', '0 - 61 - 99 - 0', '#ea7600', '234 - 118 - 0')
+						+card-colors('Facultad de Odontología', 'facodontologia', '7417 C', '1 - 83 - 85 - 0', '#e04e39', '224 - 78 - 57')
+						+card-colors('Facultad de Psicología', 'facpsicologia', '130 C', '0 - 32 - 100 - 0', '#f2a900', '242 - 169 - 0')
+						
+						
+						
+					h1#sec3 Colores complementarios / revisar pantones y cmyk despues
+					
+					div.color-info
+						+card-colors('Gris 2%', 'gris2', '347 C', '93 - 0 - 100 - 0', '#FAFAFA', '249 - 249 - 249')
+						+card-colors('Gris 5%', 'gris5', '347 C', '93 - 0 - 100 - 0', '#F7F7F7', '247 - 247 - 247')
+						+card-colors('Gris 10%', 'gris10', '347 C', '93 - 0 - 100 - 0', '#F1F1F1', '241 - 241 - 241')
+						+card-colors('Gris 15%', 'gris15', '347 C', '93 - 0 - 100 - 0', '#EDEDED', '237 - 237 - 237')
+						+card-colors('Gris 20%', 'gris20', '347 C', '93 - 0 - 100 - 0', '#DDDDDD', '221 - 221 - 221')
+						+card-colors('Gris 50%', 'gris50', '347 C', '93 - 0 - 100 - 0', '#BABBBE', '186 - 186 - 186')
+						+card-colors('Gris 60%', 'gris60', '347 C', '93 - 0 - 100 - 0', '#9A9A9A', '154 - 154 - 154')
+						+card-colors('Gris 80%', 'gris80', '347 C', '93 - 0 - 100 - 0', '#474747', '71 - 71 - 71')
+						
+						
+						
+						
+						
+			

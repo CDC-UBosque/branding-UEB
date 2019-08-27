@@ -1,0 +1,28 @@
+/* ---------------------------------- home banners -----------------------------
+	------------------------------------------------------------------------------- */
+.typography span {
+  display: block; }
+
+.typography span.typoultra {
+  font-family: 'acherus_grotesqueultralight'; }
+
+.typography span.typolight {
+  font-family: 'acherus_grotesquelight'; }
+
+.typography span.typothin {
+  font-family: 'acherus_grotesquethin'; }
+
+.typography span.typoregular {
+  font-family: 'acherus_grotesqueregular'; }
+
+.typography span.typomedium {
+  font-family: 'acherus_grotesquemedium'; }
+
+.typography span.typobold {
+  font-family: 'acherus_grotesquebold'; }
+
+.typography span.typoextra {
+  font-family: 'acherus_grotesqueextrabold'; }
+
+.typography span.typoblack {
+  font-family: 'acherus_grotesqueblack'; }

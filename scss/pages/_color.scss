@@ -1,0 +1,181 @@
+/* ---------------------------------- home banners -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.color-info{
+	margin: 0.5rem 0;
+	@include display-grid;
+	@include grid-parent-3-columns (1fr, 1fr, 1fr);
+	grid-gap: 1rem;
+	
+	.si{
+		@include grid-child-column (1, 2);
+		@include grid-child-row (1, 2);
+		
+		ul{
+			
+			list-style-type: none;
+			
+			li{
+				position: relative;
+				
+				&:before{
+					content: "";
+					position: absolute;
+					background: url('../images/svg/check.svg');
+					width: 20px;
+					height: 20px;
+					background-repeat: no-repeat;
+					background-size: contain;
+					left: -2rem;
+					top: 0;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+	.colors{
+		
+		//- -------- colors
+		#roble{
+			@include color-hexed($bg: $roble);
+		}
+		
+		#eucalipto{
+			@include color-hexed($bg: $eucalipto);
+		}
+		
+		#acacia{
+			@include color-hexed($bg: $acacia);
+		}
+		
+		#heliconia{
+			@include color-hexed($bg: $heliconia);
+		}
+		
+		#depbioetica{
+			@include color-hexed($bg: $depbioetica);
+		}
+		
+		#dephumanidades{
+			@include color-hexed($bg: $dephumanidades);
+		}
+		
+		#facciencias{
+			@include color-hexed($bg: $facciencias);
+		}
+		
+		#faccienciaseconomicas{
+			@include color-hexed($bg: $faccienciaseconomicas);
+		}
+		
+		#faccienciaspoliticas{
+			@include color-hexed($bg: $faccienciaspoliticas);
+		}
+		
+		#faccreacion{
+			@include color-hexed($bg: $faccreacion);
+		}
+		
+		#faceducacion{
+			@include color-hexed($bg: $faceducacion);
+		}
+		
+		#facenfermeria{
+			@include color-hexed($bg: $facenfermeria);
+		}
+		
+		#facingenieria{
+			@include color-hexed($bg: $facingenieria);
+		}
+		
+		#facmedicina{
+			@include color-hexed($bg: $facmedicina);
+		}
+		
+		#facodontologia{
+			@include color-hexed($bg: $facodontologia);
+		}
+		
+		#facpsicologia{
+			@include color-hexed($bg: $facpsicologia);
+		}
+		
+		#gris2{
+			@include color-hexed($bg: $color_gray_2);
+		}
+		
+		#gris5{
+			@include color-hexed($bg: $color_gray_5);
+		}
+		
+		#gris10{
+			@include color-hexed($bg: $color_gray_10);
+		}
+		
+		#gris15{
+			@include color-hexed($bg: $color_gray_15);
+		}
+		
+		#gris20{
+			@include color-hexed($bg: $color_gray_20);
+		}
+		
+		#gris50{
+			@include color-hexed($bg: $color_gray_50);
+		}
+		
+		#gris60{
+			@include color-hexed($bg: $color_gray_60);
+		}
+		
+		#gris80{
+			@include color-hexed($bg: $color_gray_80);
+		}
+		
+		.card-body{
+			
+			.txt-header{
+				margin-bottom: 1rem;
+				
+				h4{
+					margin-bottom: 0;
+					font-size: $font-titles-cards;
+					display: inline-table;
+				}
+				
+			}
+			
+			.txt-container{
+				
+				@include display-grid;
+				@include grid-parent-2-columns (1fr, 1fr);
+				grid-gap: .5rem;
+				
+				.txt{
+					// @include grid-child-column (1, 3);
+					// @include grid-child-row (1, 2);
+				
+					h5{
+						margin-bottom: 0;
+						font-size: $font-body-text;
+						line-height: $font-body-text-line;
+					}
+					
+					p{
+						font-size: $font-baser-m;
+						line-height: $font-body-text-line;
+						margin-bottom: 0;
+					}
+					
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

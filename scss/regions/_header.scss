@@ -44,6 +44,7 @@ header{
 				display: inline-block;
 				margin: 0;
 				position: initial;
+				margin-right: 1.5rem;
 				
 				.nav-link{
 					@include item-menu;

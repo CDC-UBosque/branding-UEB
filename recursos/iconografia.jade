@@ -1,0 +1,46 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Logotipo Universidad El Bosque
+
+//- Content page
+block content
+				
+	//- banner
+	section.banner-home#recursos
+		div.max_width_container
+			div
+				h1 Iconografía
+				
+	
+	section
+		div.max_width_container
+		
+			div.content-container
+				
+				- var projects = [ {name: 'Our typeface',link: "#sec0",} , {name: 'Colores principales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios',link: '#sec3',} ,]; 
+				
+				+nav
+					
+				div.content
+				
+					h1#sec0 Introducción
+					p Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
+					
+					
+					
+					
+					
+					h2#sec1 Recursos
+					
+					div.ejemplos
+						+ejemplos('../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+						
+						+download-1-file('../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'descarga archivo', 'classimg', 'Illustrator file', '../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'AI')
+						
+						
+						
+						
+						
+			

@@ -232,3 +232,13 @@
   -ms-grid-row: $row-start;
   -ms-grid-row-span: $row-end - $row-start;
 }
+
+
+// ------------------------ Colores HEX --------------------------- //
+// --------------------------------------------------- //
+@mixin color-hexed($bg: $bg_color){
+	display: block;
+	width: 100%;
+	height: 10rem;
+	background: $bg;
+}

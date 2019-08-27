@@ -110,6 +110,14 @@ mixin accordion-item-danger(title,parent,expanded)
 
 //- usage
 
+//- +accordion("sample")
+//- 	+accordion-item-primary("Logotipo Facultad de Ciencias Vigilada Mineducación","sample","true")
+//- 		|  This is first accordion content
+//- 	+accordion-item-default("Title2","sample")
+//- 		|  This is second accordion content
+//- 	+accordion-item-default("Title3","sample")
+//- 		|  This is third accordion content
+
 
 //- +accordion("sample")
 //- 	+accordion-item-default("Collapsible Group Item #1","sample","true")
@@ -118,5 +126,122 @@ mixin accordion-item-danger(title,parent,expanded)
 //- 		div
 //- 	+accordion-item-default("Collapsible Group Item #3","sample")
 //- 		div
-				
+
+
+//- ------------------ TABS
+//- ------------------
+mixin tabs(tabsItems)
+	- var tabActive = function (t) { return t.active ? 'active' : '' }
 	
+	mixin tab(index)
+		- tabsItems[index].body = block;
+		
+	block
+	
+	- tabsItems[0].active = tabsItems[0].active || !tabsItems.some(function (t) { return t.active; })
+	
+	div
+		ul.nav.nav-tabs(role="tablist")
+			each tab, index in tabsItems
+				li(role="presentation", class=tabActive(tab))
+					a(href="#"+"tab-id-" + index, aria-controls="tab-id-" + index, role="tab", data-toggle="tab")
+						if tab.icon
+							span.icon(class=tab.icon)
+						span= tab.title
+					
+		.tab-content
+			each tab, index in tabsItems
+				.tab-pane(id="tab-id-" + index, role="tabpanel", class=tabActive(tab))
+					- tab.body && tab.body()
+					
+// usage example
+//- -
+//- 	var data = [
+//- 		{ title: 'Tab 1' },
+//- 		{ title: 'Tab 2', active: true },
+//- 		{ title: 'Tab 3' },
+//- 		{ title: 'Tab 4' }
+//- 	];
+//- 	
+//- +tabs(data)
+//- 	each tab, index in data
+//- 		+tab(index)
+//- 			h2= this.title
+
+
+//- --------------------- Card colors
+//- ---------------------
+mixin card-colors(colortitle, color, pantone, cmyk, hex, rgb)
+	div.card.colors
+		div(id=color)
+		|     
+		div.card-body
+			h4.card-title= colortitle
+			|  
+			div.txt 
+				h5.card-text
+					| Pantone®
+				p= pantone 
+			div.txt 
+				h5.card-text
+					| CMYK
+				p= cmyk
+			div.txt 
+				h5.card-text
+					| HEX
+				p= hex
+			div.txt 
+				h5.card-text
+					| RGB
+				p= rgb
+				
+				
+mixin ejemplos(urlimg, alttext, classimg, titulo, enlaceSVG, enlacePNG)
+	div
+		img(src=urlimg alt=alttext class=classimg)
+		h5= titulo
+		div.downloads
+			a.download(href=enlaceSVG)  SVG
+			a.download(href=enlacePNG)  PNG
+
+				
+
+//- --------------------- Card for each N to downloads
+//- ---------------------			
+mixin download-n-files(download_items)
+	each download_element in download_items
+		div(class=download_element.class_container)
+			img(src=download_element.url_img alt=download_element.alt_text class=download_element.class_img)
+			h5= download_element.titulo_h5
+			div.downloads
+				a.download(href=download_element.link)= download_element.link_title
+			
+
+//- mixin card-colors(color_title, color, pantone, cmyk, hex, rgb)
+
+mixin card-color(color_info)
+	each color_element in color_info
+		div.card.colors
+			div(id=color_element.color_ID)
+			div.card-body
+				div.txt-header
+					h4.card-title= color_element.color_title
+				div.txt-container
+					div.txt 
+						h5.card-text
+							| Pantone®
+						p= color_element.pantone 
+					div.txt 
+						h5.card-text
+							| CMYK
+						p= color_element.cmyk
+					div.txt 
+						h5.card-text
+							| HEX
+						p= color_element.hex
+					div.txt 
+						h5.card-text
+							| RGB
+						p= color_element.rgb			
+			
+			
