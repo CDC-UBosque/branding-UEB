@@ -1,44 +1,90 @@
 /* ---------------------------------- home banners -----------------------------
 	------------------------------------------------------------------------------- */
 
-.typography{
+
+#tipografia{
 	
-	span{
-		display: block;
-		font-size: $font-brandb-l;
-		line-height: $font-brandb-l;
+	.alert{
+		margin: 2rem 0 0;
 	}
 	
-	span.typoultra{
-		font-family: 'acherus_grotesqueultralight';
+	#acherus.typography{
+		
+		span{
+			display: block;
+			font-size: $font-brandb-l;
+			line-height: $font-brandb-l;
+		}
+		
+		span.typoultra{
+			font-family: 'acherus_grotesqueultralight';
+		}
+		
+		span.typolight{
+			font-family: 'acherus_grotesquelight';
+		}
+		
+		span.typothin{
+			font-family: 'acherus_grotesquethin';
+		}
+		
+		span.typoregular{
+			font-family: 'acherus_grotesqueregular';
+		}
+		
+		span.typomedium{
+			font-family: 'acherus_grotesquemedium';
+		}
+		
+		span.typobold{
+			font-family: 'acherus_grotesquebold';
+		}
+		
+		span.typoextra{
+			font-family: 'acherus_grotesqueextrabold';
+		}
+		
+		span.typoblack{
+			font-family: 'acherus_grotesqueblack';
+		}
+		
 	}
 	
-	span.typolight{
-		font-family: 'acherus_grotesquelight';
-	}
-	
-	span.typothin{
-		font-family: 'acherus_grotesquethin';
-	}
-	
-	span.typoregular{
-		font-family: 'acherus_grotesqueregular';
-	}
-	
-	span.typomedium{
-		font-family: 'acherus_grotesquemedium';
-	}
-	
-	span.typobold{
-		font-family: 'acherus_grotesquebold';
-	}
-	
-	span.typoextra{
-		font-family: 'acherus_grotesqueextrabold';
-	}
-	
-	span.typoblack{
-		font-family: 'acherus_grotesqueblack';
-	}
+	#lato.typography{
+		
+		span{
+			display: block;
+			font-size: $font-brandb-l;
+			line-height: $font-brandb-l;
+		}
+			
+			span.typothin{
+				font-family: 'Lato', sans-serif;
+				font-weight: 100;
+			}
+			
+			span.typolight{
+				font-family: 'Lato', sans-serif;
+				font-weight: 300;
+			}
+			
+			
+			
+			span.typoregular{
+				font-family: 'Lato', sans-serif;
+				font-weight: 400;
+			}
+			
+			span.typobold{
+				font-family: 'Lato', sans-serif;
+				font-weight: 700;
+			}
+			
+			span.typoblack{
+				font-family: 'Lato', sans-serif;
+				font-weight: 900;
+			}
+			
+		}
 	
 }

@@ -19,45 +19,68 @@ block content
 		
 			div.content-container
 				
-				- var projects = [ {name: 'Nuestros colores',link: "#sec0",} , {name: 'Biblioteca de muestras',link: "#descarga-bibliotecas",} , {name: 'Colores institucionales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios',link: '#sec3',} ,]; 
+				- var projects = [ {name: 'Nuestros colores',link: "#sec0",} , {name: 'Biblioteca de muestras',link: "#descarga-bibliotecas",} , {name: 'Colores institucionales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios / Grises',link: '#sec3',} ,]; 
 				
 				+nav
 					
 				div.content
 				
 					h1#sec0 Introducción
-					p Besides our name and emblems, the most recognizable part of our Identity system is our colors.
+					p Además de nuestro logo, el elemento mas reconocido de nuestro sistema de identidad son los colores.
 					
-					h3 Use the identity colors, especially Cardinal Red
+					h3 Usos básicos de los colores
+					
+					p Generar consistencia apropiada en nuestra identidad mediante el uso correcto de colores, el verde roble y acacia se han convertido con el timpo como los colores mas reconocidos dentro de la comunicación de la Universidad El Bosque. Se pueden combinar estos colores junto con otros siempre y cuando se utilicen los colores institucionales al realizar una pieza de comunicación institucional.
 					
 					p Consistently and appropriately using our identity colors is one of the most effective ways to make sure our communication reflects a recognizable Stanford feel. Cardinal Red has been Stanford’s official color since the University’s earliest days, and supporting colors are drawn from our campus architecture and the California landscape. Feel free to combine Identity colors for a unique feel that reflects the personality of your unit.
-						
-					h3 Don't convert a color from one color space to another
 					
-					p When working with our colors - especially Cardinal Red - start with the correct color space (and source file, where applicable) for your intended medium. Our colors will distort when unintentionally converting between CMYK or RGB/Hex (for example, saving an image for web that contains an embedded .eps version of our emblems). This is especially true for Cardinal Red which can either become too pink or too maroon. Make sure before publishing on the web or at press check that our colors - in particular Cardinal Red - are all the right hue.
-					p Use Pantone (spot color only) or CMYK for externally printed pieces, RGB for documents printed in the office, and HEX for web and digital colors. DO NOT convert between these color spaces. When you embed an .eps version of our emblems, make sure it’s the correct HEX color value BEFORE saving for web or digital.
+					h3 No convertir los colores de un espacio de color a otro.
 					
-					h3 Use enough contrast for readability
+					p Al trabajar con nuestos colores (en especial con los institucionales) seleccionar el espacio de color correcto al momento de la creación del archivo (CMYK, RGB) y tratar de igual forma los enlaces adjuntos en caso de que existan, según el medio al que aplique. Los colores puede sufrir modificaciones involuntarias dentro del programa al convertir entre CMYK y RGB/Hex. Varios colores pueden sufrir variaciones que pueden ser imperceptibles a la vista pero notorias en la pieza final.
 					
-					p Colors without enough difference between them can blend together and be hard to read. Use at least 3:1 contrast ratio between foreground and background - especially for text. Similarly, take care to comply with accessibility guidelines for colorblindness (such as avoiding some color combinations like red on green). For more information or tools to test color for accessibility, refer to the SOAP website.
+					p Usar PANTONE© o CMYK para piezas impresas, RGB para documetnos que pueden ser impresos en la oficina en impresoras láser y HEXADECIMAL para productos web o digitales. 
 					
-					h3 Don't rely on color alone
+					h3 Usar suficiento contraste en favor de la legibilidad
 					
-					p When communicating emphasis or hierarchy, use size, shape, font weight or placement in addition to color. Remember, not everyone will be able to differentiate color by itself.
+					p Colores con poca diferencia o contraste tienden a fundirse y dificultan su lectura, se recomienda usar al menos una proporción de contraste de 3:1 entre el fondo y el texto espacialmente        
+						a(href='https://contrast-ratio.com' target='_blank')   https://contrast-ratio.com
 					
 					
 					
-					div.alert.alert-primary(role="alert") No cambiar los colores de espectro una vez aplicados
+					h1#descarga-bibliotecas Bibliotecas de muestras
 					
 					
-					div.muestras-bibliotecas#descarga-bibliotecas
+					div.muestras-bibliotecas
 						+download-n-files([
-							{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Biblioteca de muestras PANTONE®', 'link':'index.html', 'link_title':'descargar' },
-							{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Biblioteca de muestras CMYK', 'link':'index.html', 'link_title':'descargar' },
-							{'class_container':'clase1', 'url_img':'#', 'alt_text':'imagen de prueba', 'class_img':'class', 'titulo_h5': 'Biblioteca de muestras HEXADECIMAL', 'link':'index.html', 'link_title':'descargar' },
+							
+							{'class_container':'clase1', 
+							'url_img':'../images/svg/ASE.svg', 
+							'alt_text':'imagen de prueba', 
+							'class_img':'class', 
+							'titulo_h5': 'Biblioteca de muestras PANTONE®', 
+							'link':'../descargas/libros-de-color/UEB-colores-PANTONE.ase', 
+							'link_title':'descargar' },
+							
+							{'class_container':'clase1', 
+							'url_img':'../images/svg/ASE.svg', 
+							'alt_text':'imagen de prueba', 
+							'class_img':'class', 
+							'titulo_h5': 'Biblioteca de muestras CMYK', 
+							'link':'../descargas/libros-de-color/UEB-colores-CMKY.ase', 
+							'link_title':'descargar' },
+							
+							{'class_container':'clase1', 
+							'url_img':'../images/svg/ASE.svg', 
+							'alt_text':'imagen de prueba', 
+							'class_img':'class', 
+							'titulo_h5': 'Biblioteca de muestras RGB', 
+							'link':'../descargas/libros-de-color/UEB-colores-RGB.ase', 
+							'link_title':'descargar' },
+							
 						])
 					
 					
+					div.alert.alert-primary(role="alert") No cambiar de espectrod e color una vez aplicadas las muestras.					
 					
 					
 					h1#sec1 Colores institucionales
@@ -186,58 +209,58 @@ block content
 						
 						
 						
-					h1#sec3 Colores complementarios / revisar pantones y cmyk despues
+					h1#sec3 Colores complementarios / Grises
 					
 					div.color-info
 						+card-color([
 							{'color_title':'Gris 2%', 
 							'color_ID':'gris2', 
 							'pantone':'Cool Gray 1 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#FAFAFA', 
-							'rgb':'249 - 249 - 249'},
+							'cmyk':'10 - 7 - 5 - 0', 
+							'hex':'#D9D9D6', 
+							'rgb':'217 - 217 - 214'},
 							
 							{'color_title':'Gris 10%', 
 							'color_ID':'gris10', 
 							'pantone':'Cool Gray 2 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#F7F7F7', 
-							'rgb':'247 - 247 - 247'},
+							'cmyk':'14 - 10 - 8 - 0', 
+							'hex':'#D0D0CE', 
+							'rgb':'208 - 208 - 206'},
 							
 							{'color_title':'Gris 15%', 
 							'color_ID':'gris15', 
 							'pantone':'Cool Gray 3 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#EDEDED', 
-							'rgb':'237 - 237 - 237'},
+							'cmyk':'18 - 13 - 10 - 0', 
+							'hex':'#C8C9C7', 
+							'rgb':'200 - 201 - 199'},
 							
 							{'color_title':'Gris 20%', 
 							'color_ID':'gris20', 
 							'pantone':'Cool Gray 4 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#DDDDDD', 
-							'rgb':'221 - 221 - 221'},
+							'cmyk':'24 - 17 - 15 - 0', 
+							'hex':'#BBBCBC', 
+							'rgb':'187 - 188 - 188'},
 							
 							{'color_title':'Gris 50%', 
 							'color_ID':'gris50', 
 							'pantone':'Cool Gray 6 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#BABBBE', 
-							'rgb':'186 - 186 - 186'},
+							'cmyk':'33 - 24 - 20 - 2', 
+							'hex':'#A7A8A9', 
+							'rgb':'167 - 168 - 169'},
 							
 							{'color_title':'Gris 60%', 
 							'color_ID':'gris60', 
 							'pantone':'Cool Gray 9 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#9A9A9A', 
-							'rgb':'154 - 154 - 154'},
+							'cmyk':'50 - 40 - 34 - 17', 
+							'hex':'#75787B', 
+							'rgb':'117 - 120 - 123'},
 							
 							{'color_title':'Gris 80%', 
 							'color_ID':'gris80', 
 							'pantone':'Cool Gray 11 C', 
-							'cmyk':'93 - 0 - 100 - 0', 
-							'hex':'#474747', 
-							'rgb':'71 - 71 - 71'},
+							'cmyk':'63 - 52 - 44 - 33', 
+							'hex':'#53565A', 
+							'rgb':'83 - 86 - 90'},
 						])
 						
 						

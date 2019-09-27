@@ -1,4 +1,4 @@
-/* ---------------------------------- home banners -----------------------------
+/* ---------------------------------- colors -----------------------------
 	------------------------------------------------------------------------------- */
 	
 .color-info{
@@ -172,6 +172,34 @@
 					
 				}
 				
+			}
+			
+		}
+		
+	}
+	
+}
+
+.muestras-bibliotecas{
+	grid-gap: 1rem;
+	margin: 3rem 0;
+	place-items: center;
+	@include display-grid;
+	@include grid-parent-3-columns (1fr, 1fr, 1fr);
+	
+	div{
+		text-align: center;
+		
+		h5{
+			font-size: $font-body-text;
+		}
+		
+		.downloads{
+		text-align: center;
+		
+			.download{
+				margin-right: .5rem;
+				@include button-s-border-green;
 			}
 			
 		}

@@ -46,3 +46,32 @@
 	}
 	
 }
+
+	
+.content-container .content .alert{
+	background: transparentize($heliconia, .7);
+	border: 0;
+	color: $color_text;
+	
+	p{
+		&:last:child{
+			margin-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+	
+	p{
+		margin-bottom: 0;
+		padding-bottom: 0;
+	}
+	
+	a{
+		//color: $color_text;
+		//text-decoration: underline;
+		//font-style: italic;
+		@include buton-s-transparent;
+		color: $heliconia;
+		background: $color_brand_white;
+	}
+	
+}
