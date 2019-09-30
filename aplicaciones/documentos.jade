@@ -1,0 +1,42 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Logotipo Universidad El Bosque
+
+//- Content page
+block content
+				
+	//- banner
+	section.banner-home#tipografia
+		div.max_width_container
+			div
+				h1 Documentos 
+				
+	
+	section#tipografia
+		div.max_width_container
+		
+			div.content-container
+				
+				- var projects = [ {name: 'Formatos pequeño',link: "#sec0",} , {name: 'Formatos medianos',link: "#sec1",} , {name: 'Formato grande',link: '#sec2',} , ]; 
+				
+				+nav
+					
+				div.content
+				
+					div.box#sec0
+						h1 Formato pequeño
+						
+						p El texto “El Bosque” debe ser como mínimo igual a las dos décimas partes del lado más largo, o si se prefiere, el 20% del tamaño del lado más largo, sea horizontal o vertical.
+						
+					div.box#sec1
+						h1 Formatos medianos
+						
+						p Es relativo al tamaño de la pieza y a la distancia a la cual se observa la pieza. El texto “El Bosque” debe ser como mínimo igual a la décima parte del lado más largo de la pieza, o si se prefiere, el 10% del tamaño del lado más largo, sea horizontal o vertical.
+						
+					div.box#sec2
+						h1 Formato grande
+						
+						p El texto “El Bosque” debe ser como mínimo igual a las dos décimas partes del lado más largo, o si se prefiere, el 20% del tamaño del lado más largo, sea horizontal o vertical.
+						

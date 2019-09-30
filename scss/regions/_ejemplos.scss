@@ -47,6 +47,48 @@
 	
 }
 
+.ejemplos-2-col{
+	margin: 2rem 0;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	grid-gap: 1rem;
+	
+	>div{
+		//border: 1px solid;
+	}
+	
+	.classimg{
+		display: inline-block;
+		//min-height: 11rem;
+	    padding: 1rem;
+		//max-height: 11rem;
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	.invertido{
+		background: black; 
+	}
+	
+	h5, h3{
+		text-align: center;
+	}
+	
+	h3{
+		font-size: 1em;
+	}
+	
+	.downloads{
+		text-align: center;
+		
+		.download{
+			margin-right: .5rem;
+			@include button-s-border-green;
+		}
+		
+	}
+	
+}
 	
 .content-container .content .alert{
 	background: transparentize($heliconia, .7);

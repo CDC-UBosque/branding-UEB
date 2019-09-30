@@ -1,0 +1,144 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Logotipo Universidad El Bosque
+
+//- Content page
+block content
+				
+	//- banner
+	section.banner-home#tipografia
+		div.max_width_container
+			div
+				h1 Concepto 
+				
+	
+	section#tipografia
+		div.max_width_container
+		
+			div.content-container
+				
+				- var projects = [ {name: 'Concepto',link: "#sec0",} , {name: 'Construcción',link: "#sec1",} , {name: 'Área de reserva',link: '#sec2',} , {name: 'Usos indebidos',link: '#sec3',} , ]; 
+				
+				+nav
+					
+				div.content
+				
+					div.box#sec0
+				
+						h1 Concepto
+						
+						p La Universidad es como un bosque; un ecosistema que crece y favorece la calidad de vida gracias a los atributos que fomentan quienes lo componen. 
+					
+					div.box#sec1
+						h1 Construcción
+						
+						p En ellas se encuentran representados los animales que conformaron la fauna mítica indígena. Estos son: la serpiente, el jaguar, el lagarto, el mono y las aves. Se notó que no se utilizan otra clase de animales, como por ejemplo serían los que pertenecen a la fauna marina o los insectos.  
+					
+					div.box
+						div.ejemplos-2-col
+							div
+								img.classimg(src='../images/identificador/simbolo.svg')
+								
+								h3 Símbolo
+								
+								//-p Por su orientación horizontal y su composición en dos renglones esta es la versión más versatil del Logotipo, ya que puede ser usada en espacios reducidos como encabezados y pié de páginas sin perder legibilidad, tanto sola como con acompañamientos.
+								
+							div
+								img.classimg(src='../images/identificador/geometrizacion.svg')
+								
+								h3 Geometrización
+								
+								//-p Por su orientación horizontal y su composición en dos renglones esta es la versión más versatil del Logotipo, ya que puede ser usada en espacios reducidos como encabezados y pié de páginas sin perder legibilidad, tanto sola como con acompañamientos.
+							
+							
+					div.box#sec2
+						h1 Área de reserva
+						
+						p Debe recibir el mismo tratamiento que el área de reserva del Logotipo, es decir que independiente al tamaño de este, el área de reserva debe ser igual a la altura de la letra “E” en “El Bosque”. Adicionalmente, los acompañamientos deben mantenerse dentro del área de reserva del Logotipo, en cuyo caso, la nueva área de reserva se incrementa 1E en la dirección del texto cuando sea necesario.
+						
+						p El área de reserva hace parte del logotipo.
+						
+						h3 Tamaño mínimo de uso
+						
+						p Siempre usar el identificador en un tamaño mínimo de <b>21mm</b> para medios impresos y de <b>65px</b> para medios digital, de esta forma se grantiza la reproducción del identificador a un tamaño mínimo máximo legible. 
+						
+						div.ejemplos-2-col
+							div
+								img.classimg(src='../images/identificador/reserva-horizontal-a-dos-lineas.svg')
+								h3 Reserva horizontal a dos líneas
+								
+							div
+								img.classimg(src='../images/identificador/reserva-vertical-a-dos-lineas.svg')
+								h3 Reserva vertical a dos líneas
+								
+							div
+								img.classimg(src='../images/identificador/reserva-horizontal-a-una-linea.svg')
+								h3 Reserva horizontal a una línea
+								
+							div
+								img.classimg(src='../images/identificador/reserva-vertical-a-una-linea.svg')
+								h3 Reserva vertical a una línea
+						
+							
+					div.box#sec3
+						h1 Usos indebidos
+						
+						p Con cualquier versión del Logotipo se deben evitar los siguientes casos:
+						
+						div.ejemplos#indebidos
+							div
+								img.classimg(src='../images/identificador/indebido-1.svg')
+								p Distorsión de la proporción horizontal o vertical.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-2.svg')
+								p Rotación.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-3.svg')
+								p Grises en cualquier elemento del Logotipo.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-4.svg')
+								p Logotipo completamente en gris.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-5.svg')
+								p Usar el logotipo en forma de reflejo.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-6.svg')
+								p Isotipo y texto de diferente color cuando no sean los institucionales.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-7.svg')
+								p Color de ojos de las serpientes diferentes al color del fondo.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-8.svg')
+								p Aplicar contornos a cualquier elemento y en cualquier color.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-9.svg')
+								p Color sobre color.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-10.svg')
+								p Colores sobre fotografía o video.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-11.svg')
+								p Colores institucionales sobre textura.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-12.svg')
+								p Colores institucionales sobre grises mayores al 5%.
+								
+							div
+								img.classimg(src='../images/identificador/indebido-13.svg')
+								p Isotipo de color con texto blanco, sobre gris, negro o colores diferentes al verde roble institucional.
+								
+								
+								

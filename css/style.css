@@ -3598,6 +3598,70 @@ footer {
         opacity: 1;
         visibility: visible; }
 
+.ejemplos-2-col {
+  margin: 2rem 0;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr;
+  grid-gap: 1rem; }
+  @supports (display: grid) {
+    .ejemplos-2-col {
+      display: grid; } }
+  @supports (-ms-ime-align: auto) {
+    .ejemplos-2-col {
+      display: grid; } }
+  @supports not (display: grid) {
+    .ejemplos-2-col {
+      display: inline-block; } }
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    .ejemplos-2-col {
+      display: -ms-grid; } }
+  .ejemplos-2-col .classimg {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+    width: 100%; }
+  .ejemplos-2-col .invertido {
+    background: black; }
+  .ejemplos-2-col h5, .ejemplos-2-col h3 {
+    text-align: center; }
+  .ejemplos-2-col h3 {
+    font-size: 1em; }
+  .ejemplos-2-col .downloads {
+    text-align: center; }
+    .ejemplos-2-col .downloads .download {
+      margin-right: .5rem;
+      display: inline-block;
+      vertical-align: top;
+      color: #7BC142;
+      background-color: transparent;
+      border-radius: 40px;
+      padding: 7px 25px;
+      border: 1px solid #7BC142;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+      line-height: normal;
+      font-family: "latoblack";
+      font-size: 10px; }
+      .ejemplos-2-col .downloads .download::after {
+        content: "";
+        border-radius: 40px;
+        width: 103%;
+        height: 107%;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        right: 0px;
+        bottom: 0;
+        border: 2px solid #7BC142;
+        opacity: 0;
+        visibility: 0;
+        transition: .3s ease-out all; }
+      .ejemplos-2-col .downloads .download:hover::after {
+        opacity: 1;
+        visibility: visible; }
+
 .content-container .content .alert {
   background: rgba(240, 128, 19, 0.3);
   border: 0;
@@ -3809,15 +3873,18 @@ footer {
     -ms-grid-column-span: 1;
     grid-row: 1/2;
     -ms-grid-row: 1;
-    -ms-grid-row-span: 1; }
+    -ms-grid-row-span: 1;
+    /*>h1,h2{
+			&:nth-child(n+2){
+				margin: 4rem 0 2rem;
+			}
+		}*/ }
     .content-container .content p {
       text-align: left;
       margin: initial;
       margin-bottom: 1rem; }
-    .content-container .content > h1:nth-child(n+2), .content-container .content h2:nth-child(n+2) {
-      margin: 4rem 0 2rem; }
-    .content-container .content > h3:nth-child(n+2) {
-      margin: 6rem 0 2rem; }
+    .content-container .content .box {
+      margin: 3rem 0; }
 
 /* ---------------------------------- home banners -----------------------------
 	------------------------------------------------------------------------------- */
