@@ -20,8 +20,8 @@ mixin ejemplos(urlimg, alttext, classimg, titulo, enlaceSVG, enlacePNG)
 		img(src=urlimg alt=alttext class=classimg)
 		h5= titulo
 		div.downloads
-			a.download(href=enlaceSVG)  SVG
-			a.download(href=enlacePNG)  PNG
+			a.download(href=enlaceSVG download)  SVG
+			a.download(href=enlacePNG download)  PNG
 
 //- ---------------------------- titles big ------------------------------- //
 mixin big-titles(small, big)
@@ -201,8 +201,8 @@ mixin ejemplos(urlimg, alttext, classimg, titulo, enlaceSVG, enlacePNG)
 		img(src=urlimg alt=alttext class=classimg)
 		h5= titulo
 		div.downloads
-			a.download(href=enlaceSVG)  SVG
-			a.download(href=enlacePNG)  PNG
+			a.download(href=enlaceSVG download)  SVG
+			a.download(href=enlacePNG download)  PNG
 
 				
 
@@ -219,7 +219,7 @@ mixin download-n-files(download_items)
 
 //- mixin card-colors(color_title, color, pantone, cmyk, hex, rgb)
 
-mixin card-color(color_info)
+mixin card-color(color_info) 
 	each color_element in color_info
 		div.card.colors
 			div(id=color_element.color_ID)
