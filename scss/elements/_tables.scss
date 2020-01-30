@@ -1,0 +1,64 @@
+/* ---------------------------------- Tables  -----------------------------
+	------------------------------------------------------------------------------- */
+	
+.table{
+	
+	thead{
+		
+		tr{
+			
+			th{
+				text-transform: uppercase;
+				@include font_universal (
+					$font_family_line_height: 16px,
+					$font_family_weight: 300,
+					$font_family_size: 12px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font-AG-extrabold
+				);
+			}
+			
+		}
+		
+	}
+	
+	tbody{
+		
+		tr{
+			
+			&:first-child{
+				td{
+					border-top: 0;
+				}
+				
+			}
+			
+			td{
+				@include font_universal (
+					$font_family_line_height: 17px,
+					$font_family_weight: 300,
+					$font_family_size: 14px,
+					$font_family_color: $color_text,
+					$font_family_letter_spacing: 0,
+					$font_family_group: $font-AG-regular
+				);
+				
+				li{
+					@include font_universal (
+						$font_family_line_height: 17px,
+						$font_family_weight: 300,
+						$font_family_size: 14px,
+						$font_family_color: $color_text,
+						$font_family_letter_spacing: 0,
+						$font_family_group: $font-AG-regular
+					);
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -21,11 +21,11 @@ html(lang='es')
 		include mixins.jade
 		
 		header
-			div.pre-header: a(href='https://www.uelbosque.edu.co' target='_blank') Ir a Universidad El Bosque
+			div.pre-header: a(href='https://www.unbosque.edu.co' target='_blank') Ir a Universidad El Bosque
 			
 			nav.navbar.navbar-expand-lg.navbar-light
-				a.navbar-brand(href='../') 
-					img(src='../images/svg/logo-ueb.svg')
+				a.navbar-brand(href='../../') 
+					img(src='../../images/svg/logo-ueb.svg')
 				button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
 					span.navbar-toggler-icon
 					
@@ -64,6 +64,29 @@ html(lang='es')
 									
 									
 					li.nav-item.dropdown.active
+						a.nav-link.dropdown-toggle(href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Componentes
+							span.sr-only (current)
+						
+						div.dropdown-menu(aria-labelledby='navbarDropdown')
+							div.dropdown-item
+								div.destacado
+									h2 Componentes
+									a(href='../componentes.html') Ver más
+								div.enlaces
+									a(href='../componentes/acciones.html') Acciones
+								
+								
+									a(href='../componentes/estructura.html') Estructura
+									a(href='../componentes/formularios.html') Formularios
+									a(href='../componentes/imagenes.html') Imágenes
+									a(href='../componentes/indicadores.html') Indicadores
+									a(href='../componentes/titulos-y-texto.html') Títulos y texto
+									a(href='../componentes/navegacion.html') Navegación
+									a(href='../componentes/interacciones.html') Interacciones
+									
+									
+									
+					li.nav-item.dropdown.active
 						a.nav-link.dropdown-toggle(href='#' id='navbarDropdown' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false') Aplicaciones
 							span.sr-only (current)
 						
@@ -76,7 +99,6 @@ html(lang='es')
 									a(href='../aplicaciones/documentos.html') Documentos
 									a(href='../aplicaciones/papeleria.html') Papelería institucional
 									a(href='../aplicaciones/redes.html') Redes sociales
-									a(href='../aplicaciones/web.html') Web
 									a(href='../aplicaciones/fotografia.html') Fotografía
 									a(href='../aplicaciones/merchandise.html') Material promocional
 									
@@ -125,7 +147,7 @@ html(lang='es')
 					h4 Universidad El Bosque
 					h5 Instalaciones Bogotá
 					p
-						img(alt="Sede bogotá" src="../images/svg/bogota.svg")
+						img(alt="Sede bogotá" src="../../images/svg/bogota.svg")
 					p Av. Cra. 9 No. 131 A - 02
 						br/ Línea gratuita:
 						br/ 018000 113033
@@ -134,7 +156,7 @@ html(lang='es')
 				div
 					h5 Instalaciones Chía
 					p
-						img(alt="Sede bogotá" src="../images/svg/chia.svg")
+						img(alt="Sede bogotá" src="../../images/svg/chia.svg")
 					p Autopista Norte
 						br/ Km. 20 costado occidental
 						br/ Vía Chía - Bogotá

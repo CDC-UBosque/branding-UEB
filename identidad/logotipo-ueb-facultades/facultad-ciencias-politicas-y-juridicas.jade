@@ -1,0 +1,172 @@
+extends ../../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Logotipo Facultades Universidad El Bosque
+
+//- Content page
+block content
+				
+	//- banner
+	section.banner-home#identidad
+		div.max_width_container
+			div
+				h1 Logotipos Facultad de Ciencias Políticas y Jurídicas
+				
+	
+	section
+		div.max_width_container
+		
+			div.content-container
+				
+				- var projects = [ {name: 'Introducción',link: "#sec0",} , {name: 'Facultad de Ciencias Políticas y Jurídicas',link: "#sec1",} , {name: 'Facultad de Ciencias Políticas y Jurídicas / Vigilada Mineducación',link: '#sec2',} , {name: 'Programa de Ciencia Política',link: "#sec3",} , {name: 'Programa de Ciencia Política / Vigilada Mineducación',link: '#sec4',} , {name: 'Facultad de Ciencias Políticas y Jurídicas / Programa de Ciencia Política',link: "#sec5",} , {name: 'Facultad de Ciencias Políticas y Jurídicas / Programa de Ciencia Política / Vigilada Mineducación',link: '#sec6',} , {name: 'Programa de Derecho',link: "#sec7",} , {name: 'Programa de Derecho / Vigilada Mineducación',link: '#sec8',} , {name: 'Facultad de Ciencias Políticas y Jurídicas / Programa de Derecho',link: "#sec9",} , {name: 'Facultad de Ciencias Políticas y Jurídicas / Programa de Derecho / Vigilada Mineducación',link: '#sec10',} ,]; 
+				
+				+nav
+					
+				div.content
+				
+					div.box#sec0
+						h2 Logotipos Facultad de Ciencias Políticas y Jurídicas
+						
+						h3 Cuando y cómo usarlo
+						
+						p Se debe usar cuando se necesita representar una facultad y/o departamento en una pieza impresa o digital, para tener un uso adecuado por favor utilizar uno de los que se muestran a continuación según corresponda.
+						
+						
+						div.alert.alert-primary(role="alert") El logotipo tiene usos apropiados y restringidos, para saber más seguir el siguiente enlace   
+							a(href='../../identidad/logotipo-ueb.html') usos
+					
+					
+					div.box#sec1
+						h3 Logotipos Facultad de Ciencias Políticas y Jurídicas
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/regular/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec2
+						h3 Logotipos Facultad de Ciencias Políticas y Jurídicas / Vigilada Mineducación
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+					div.box#sec3
+						h3 Logotipos Programa de Ciencia Política
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/regular/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec4
+						h3 Logotipos Programa de Ciencia Política / Vigilada Mineducación
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica/vigilada/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+							
+					div.box#sec5
+						h3 Logotipos Facultad de Ciencias Políticas y Jurídicas / Programa de Ciencia Política
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/regular/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec6
+						h3 Logotipos Facultad de Ciencias Políticas y Jurídicas / Programa de Ciencia Política / Vigilada Mineducación
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-ciencia-politica+facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec7
+						h3 Logotipos Programa de Derecho
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/regular/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec8
+						h3 Logotipos Programa de Derecho / Vigilada Mineducación
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho/vigilada/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec9
+						h3 Logotipos Facultad de Ciencias Políticas y Jurídicas / Programa de Derecho
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/regular/facultad-logo-ueb-vertical-a-una-linea.png')
+							
+							
+					div.box#sec10
+						h3 Logotipos Facultad de Ciencias Políticas y Jurídicas / Programa de Derecho / Vigilada Mineducación
+						
+						div.ejemplos
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/pprograma-de-derecho+facultad/vigilada/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a una linea', 'classimg', 'Horizontal a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-horizontal-a-una-linea.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a dos lineas', 'classimg', 'Vertical a dos líneas', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-vertical-a-dos-lineas.png')
+							
+							+ejemplos('../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias vertical a una linea', 'classimg', 'Vertical a una línea', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.svg', '../../descargas/facultades/ciencias-politicas-y-juridicas/programa-de-derecho+facultad/vigilada/facultad-logo-ueb-vertical-a-una-linea.png')
+						
+						
+												
+							
+							

@@ -1,0 +1,93 @@
+extends ../jade/includes/layout-pages.jade
+
+//- Head html tag
+block title
+	title Logotipo Universidad El Bosque
+
+//- Content page
+block content
+				
+	//- banner
+	section.banner-home#componentes-digitales
+		div.max_width_container
+			div
+				h1 Acciones
+				
+	
+	section
+		div.max_width_container
+		
+			div.content-container
+				
+				- var projects = [ {name: 'Introducción',link: "#sec0",} , {name: 'Botones',link: "#sec1",} , {name: 'Enlaces',link: '#sec2',} , {name: 'Actualizaciones',link: '#sec3',} ,]; 
+				
+				+nav 
+				
+					
+				div.content
+				
+					div.box#sec0
+						h1 Introducción
+						p Checkmate... What do they got in there? King Kong? Hey, you know how I'm, like, always trying to save the planet? Here's my chance. This thing comes fully loaded. AM/FM radio, reclining bucket seats, and... power windows. Eventually, you do plan to have dinosaurs on your dinosaur tour, right?
+					
+					
+					div.box#sec1
+						h2 Botones
+						p Permiten a los usuarios realizar una acción o navegar a otra página. Tienen múltiples estilos según la necesidad y son ideales para llamar la atención cuando el usuario necesita realizar una acción para continuar el flujo de navegación.
+						
+						
+						div
+				
+							+image-caption([
+								
+								{'class_container':'ejemplos-2-col-txt', 
+								'url_img':'../images/svg/ASE.svg', 
+								'alt_text':'imagen de ejemplo', 
+								'class_img':'example_image', 
+								'titulo': 'Botón', 
+								'texto':'The call to action button communicates strong emphasis and is reserved for encouraging critical actions. There should only be one visible call to action button per section. There is no quiet style for this button because it is meant to be intentionally prominent.' },
+								
+								{'class_container':'ejemplos-2-col-txt', 
+								'url_img':'../images/svg/ASE.svg', 
+								'alt_text':'imagen de ejemplo', 
+								'class_img':'example_image', 
+								'titulo': 'Estado default', 
+								'texto':'The primary button is used for medium emphasis. It should be used in place of a call to action button when the action requires less prominence, or if there are multiple primary actions of the same importance on the page. It can be displayed either in standard style (visible stroke) or in quiet style.' },
+								
+							])
+					
+					
+					div.box#sec2
+						h2 Links / Enlaces
+						
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/facebook.svg', 'Facebook', 'classimg', 'Facebook', '../descargas/iconografia/iconos/facebook.svg', '../descargas/iconografia/iconos/facebook.png')
+							
+							
+							
+					div.box#sec3
+						h2 Actualizaciones
+						
+						//- ---------------- 
+						//- ---------------- Tables
+						//- ----------------
+						+tables-containers-actualizaciones
+							+set('tr')
+								tr
+									td 17 / Enero / 2020
+									td 1.0
+									td 
+										ul
+											li This component is now individually versioned (individual versions of existing components start at 5.0.0)
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							
+							

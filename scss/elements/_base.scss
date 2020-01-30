@@ -1,14 +1,18 @@
-html{
+ html{
 	@media (pointer:coarse){
 		overflow-x: hidden;
 	}
 	
 	body{
 		background: $color_brand_white;
-		color: $color-font;
-		font-family: $font-basel;
-		font-size: $font-body-text;
-		line-height: $font-body-text-line;
+		@include font_universal (
+			$font_family_line_height: 20px,
+			$font_family_weight: 300,
+			$font_family_size: 16px,
+			$font_family_color: $color_text,
+			$font_family_letter_spacing: 0,
+			$font_family_group: $font-basel
+		);
 		@include prefix(transition, all 0.3s ease, webkit moz o ms);
 		overflow-x: hidden;
 		height: 100%;
@@ -38,14 +42,25 @@ html{
 		}
 		
 		h1{
-			font-family: $font-AG-black;
-			font-size: $font-titles-xl;
-			line-height: $font-titles-xl;
+			@include font_universal (
+				$font_family_line_height: $font-titles-xl,
+				$font_family_weight: 300,
+				$font_family_size: $font-titles-xl,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font-AG-black
+			);
 		}
 		
 		h2{
-			font-family: $font-AG-black;
-			font-size: $font-titles;
+			@include font_universal (
+				$font_family_line_height: $font-titles-xl,
+				$font_family_weight: 300,
+				$font_family_size: $font-titles,
+				$font_family_color: $color_text,
+				$font_family_letter_spacing: 0,
+				$font_family_group: $font-AG-black
+			);
 		}
 		
 		h3{

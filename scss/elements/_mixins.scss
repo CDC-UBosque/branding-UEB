@@ -242,3 +242,36 @@
 	height: 10rem;
 	background: $bg;
 }
+
+@mixin font_universal ($font_family_line_height: $line_height,
+$font_family_weight: $weight,
+$font_family_size: $size,
+$font_family_color: $color,
+$font_family_letter_spacing: $spacing,
+$font_family_group: $family) {
+  font-size: $font_family_size;
+  line-height: $font_family_line_height;
+  font-weight: $font_family_weight;
+  font-family: $font_family_group;
+  color: $font_family_color;
+  letter-spacing: $font_family_letter_spacing;
+}
+
+@mixin bg-laterales($color, $width: $bg-demasia-width) {
+    position: relative;
+    &::before,
+    &::after {
+        content: "";
+        background-color: $color;
+        width: $width;
+        height: 100%;
+        position: absolute;
+        top: 0px;
+    }
+    &::before {
+        left: 100%;
+    }
+    &::after {
+        right: 100%;
+    }
+}

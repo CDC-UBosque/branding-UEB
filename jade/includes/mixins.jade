@@ -243,5 +243,45 @@ mixin card-color(color_info)
 						h5.card-text
 							| RGB
 						p= color_element.rgb			
+						
+						
+						
+						
+//- ---------------------------- Tables Actualizaciones ------------------------------- //
+
+// initialization
+- blocks = {}
+
+mixin set(key)
+	- blocks[key] = this.block
+
+// mixin definition
+mixin tables-containers-actualizaciones
+	table.table.table-striped.actualizaciones
+		thead
+			//- - blocks.thead()
+			tr
+				th fecha
+				th versión
+				th notas
+		block
+		tbody
+			- blocks.tr()
 			
 			
+			
+			
+//- ---------------------------- Acciones image + caption ------------------------------- //
+mixin image-caption(image_items)
+	each image_element in image_items
+		div(class=image_element.class_container)
+			img(src=image_element.url_img alt=image_element.alt_text class=image_element.class_img)
+			div
+				h3= image_element.titulo
+				p= image_element.texto
+				
+				
+				
+				
+				
+				

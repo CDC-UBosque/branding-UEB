@@ -19,21 +19,220 @@ block content
 		
 			div.content-container
 				
-				- var projects = [ {name: 'Our typeface',link: "#sec0",} , {name: 'Colores principales',link: "#sec1",} , {name: 'Colores departamentos y facultades',link: '#sec2',} , {name: 'Colores complementarios',link: '#sec3',} ,]; 
+				- var projects = [ {name: 'Introducción',link: "#sec0",} , {name: 'Estructura',link: "#sec1",} , {name: 'Íconos redes sociales',link: '#sec2',} , {name: 'Íconos facultades',link: '#sec3',} , {name: 'Íconos áreas / entidades',link: '#sec4',} , {name: 'Íconos lugares / ambiente',link: '#sec5',} , {name: 'Audiencias',link: '#sec6',} , {name: 'Apoyo gráfico',link: '#sec7',} ,]; 
 				
-				+nav
+				+nav 
+				
 					
 				div.content
 				
 					div.box#sec0
 						h1 Introducción
-						p Icons are visual symbols used to represent ideas, objects, or actions. They communicate messages at a glance, afford interactivity, and draw attention to important information.
-					
-					
+						p Para tener consistencia en la creación de los íconos se deben seguir los siguientes lineamientos
+						ol
+							li Usar siempre 5 puntos en la parte inferior del ícono.
+							li Los íconos deben ser siempre en líneas nunca usando relleno. 
+							li Usar la estructura para crear un nuevo asset.
+							li Íconos deben ser cuadrados. 
+							li Las líneas deben tener un calibre de al menos de 2px.
 					
 					
 					div.box#sec1
-						h2 Recursos
+						h2 Estructura
 						
 						div.ejemplos
-							+ejemplos('../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.svg', 'Logotipo Universidad El Bosque Facultad de Ciencias horizontal a dos lineas', 'classimg', 'Horizontal a dos líneas', '../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.svg', '../descargas/facultades/ciencias/facultad/facultad-logo-ueb-horizontal-a-dos-lineas.png')
+							+ejemplos('../descargas/iconografia/iconos/grid.svg', 'Icon Grid', 'classimg', 'Icon Grid', '../descargas/iconografia/iconos/grid.svg', '../descargas/iconografia/iconos/grid.svg')
+					
+					
+					div.box#sec2
+						h2 Íconos redes sociales
+						
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/facebook.svg', 'Facebook', 'classimg', 'Facebook', '../descargas/iconografia/iconos/facebook.svg', '../descargas/iconografia/iconos/facebook.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/twitter.svg', 'Twitter', 'classimg', 'Twitter', '../descargas/iconografia/iconos/twitter.svg', '../descargas/iconografia/iconos/twitter.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/instagram.svg', 'Instagram', 'classimg', 'Instagram', '../descargas/iconografia/iconos/instagram.svg', '../descargas/iconografia/iconos/instagram.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/linked-in.svg', 'Linked In', 'classimg', 'Linked In', '../descargas/iconografia/iconos/linked-in.svg', '../descargas/iconografia/iconos/linked-in.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/youtube.svg', 'Youtube', 'classimg', 'Youtube', '../descargas/iconografia/iconos/youtube.svg', '../descargas/iconografia/iconos/youtube.png')
+							
+							
+							
+					div.box#sec3
+						h2 Íconos facultades
+						
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/facultad-enfermeria.svg', 'Facultad de Enfermería', 'classimg', 'Facultad de Enfermería', '../descargas/iconografia/iconos/facultad-enfermeria.svg', '../descargas/iconografia/iconos/facultad-enfermeria.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-educacion.svg', 'Facultad de Educación', 'classimg', 'Facultad de Educación', '../descargas/iconografia/iconos/facultad-educacion.svg', '../descargas/iconografia/iconos/facultad-educacion.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-ciencias-juridicas-politicas.svg', 'Facultad de Ciencias Jurídicas y Políticas', 'classimg', 'Facultad de Ciencias Jurídicas y Políticas', '../descargas/iconografia/iconos/facultad-ciencias-juridicas-politicas.svg', '../descargas/iconografia/iconos/facultad-ciencias-juridicas-politicas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-ciencias-administrativas.svg', 'Facultad de Ciencias Administrativas', 'classimg', 'Facultad de Ciencias Administrativas', '../descargas/iconografia/iconos/facultad-ciencias-administrativas.svg', '../descargas/iconografia/iconos/facultad-ciencias-administrativas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-ciencias.svg', 'Facultad de Ciencias', 'classimg', 'Facultad de Ciencias', '../descargas/iconografia/iconos/facultad-ciencias.svg', '../descargas/iconografia/iconos/facultad-ciencias.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-creacion-comunicacion.svg', 'Facultad de Creación y Comunicación', 'classimg', 'Facultad de Creación y Comunicación', '../descargas/iconografia/iconos/facultad-creacion-comunicacion.svg', '../descargas/iconografia/iconos/facultad-creacion-comunicacion.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-medicina.svg', 'Facultad de Medicina', 'classimg', 'Facultad de Medicina', '../descargas/iconografia/iconos/facultad-medicina.svg', '../descargas/iconografia/iconos/facultad-medicina.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-odontologia.svg', 'Facultad de Odontología', 'classimg', 'Facultad de Odontología', '../descargas/iconografia/iconos/facultad-odontologia.svg', '../descargas/iconografia/iconos/facultad-odontologia.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/facultad-psicologia.svg', 'Facultad de Psicología', 'classimg', 'Facultad de Psicología', '../descargas/iconografia/iconos/facultad-psicologia.svg', '../descargas/iconografia/iconos/facultad-psicologia.png')
+							
+							
+							
+					div.box#sec4
+						h2 Íconos áreas / entidades
+						
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/admisiones.svg', 'Admisiones', 'classimg', 'Admisiones', '../descargas/iconografia/iconos/admisiones.svg', '../descargas/iconografia/iconos/admisiones.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/programas.svg', 'Programas', 'classimg', 'Programas', '../descargas/iconografia/iconos/programas.svg', '../descargas/iconografia/iconos/programas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/internacionalizacion.svg', 'Internacionalizacion', 'classimg', 'Internacionalizacion', '../descargas/iconografia/iconos/internacionalizacion.svg', '../descargas/iconografia/iconos/internacionalizacion.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/investigaciones.svg', 'Investigaciones', 'classimg', 'Investigaciones', '../descargas/iconografia/iconos/investigaciones.svg', '../descargas/iconografia/iconos/investigaciones.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/sitiio.svg', 'SiTiiO', 'classimg', 'SiTiiO', '../descargas/iconografia/iconos/sitiio.svg', '../descargas/iconografia/iconos/sitiio.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/gestion-academica.svg', 'Gestión Académica', 'classimg', 'Gestión Académica', '../descargas/iconografia/iconos/gestion-academica.svg', '../descargas/iconografia/iconos/gestion-academica.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/biblioteca.svg', 'Biblioteca', 'classimg', 'Biblioteca', '../descargas/iconografia/iconos/biblioteca.svg', '../descargas/iconografia/iconos/biblioteca.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/talento-humano.svg', 'Talento Humano', 'classimg', 'Talento Humano', '../descargas/iconografia/iconos/talento-humano.svg', '../descargas/iconografia/iconos/talento-humano.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/bienestar-universitario.svg', 'Bienestar Universitario', 'classimg', 'Bienestar Universitario', '../descargas/iconografia/iconos/bienestar-universitario.svg', '../descargas/iconografia/iconos/bienestar-universitario.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/PAE.svg', 'PAE', 'classimg', 'PAE', '../descargas/iconografia/iconos/PAE.svg', '../descargas/iconografia/iconos/PAE.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/exito-estudiantil.svg', 'Éxito Estudiantil', 'classimg', 'Éxito Estudiantil', '../descargas/iconografia/iconos/exito-estudiantil.svg', '../descargas/iconografia/iconos/exito-estudiantil.png')
+							
+							
+					div.box#sec5
+						h2 Íconos lugares / ambiente
+						
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/UEB.svg', 'UEB', 'classimg', 'UEB', '../descargas/iconografia/iconos/UEB.svg', '../descargas/iconografia/iconos/UEB.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb.svg', 'Usaquén', 'classimg', 'Usaquén', '../descargas/iconografia/iconos/ambiente-ueb.svg', '../descargas/iconografia/iconos/ambiente-ueb.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-2.svg', 'Edificio Fundadores', 'classimg', 'Edificio Fundadores', '../descargas/iconografia/iconos/ambiente-ueb-2.svg', '../descargas/iconografia/iconos/ambiente-ueb-2.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-3.svg', 'Canchas', 'classimg', 'Canchas', '../descargas/iconografia/iconos/ambiente-ueb-3.svg', '../descargas/iconografia/iconos/ambiente-ueb-3.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-4.svg', 'Observatorio', 'classimg', 'Observatorio', '../descargas/iconografia/iconos/ambiente-ueb-4.svg', '../descargas/iconografia/iconos/ambiente-ueb-4.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-5.svg', 'Plazoleta', 'classimg', 'Plazoleta', '../descargas/iconografia/iconos/ambiente-ueb-5.svg', '../descargas/iconografia/iconos/ambiente-ueb-5.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-6.svg', 'Bicis', 'classimg', 'Bicis', '../descargas/iconografia/iconos/ambiente-ueb-6.svg', '../descargas/iconografia/iconos/ambiente-ueb-6.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-7.svg', 'Rancho', 'classimg', 'Rancho', '../descargas/iconografia/iconos/ambiente-ueb-7.svg', '../descargas/iconografia/iconos/ambiente-ueb-7.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/ambiente-ueb-8.svg', 'Chía', 'classimg', 'Chía', '../descargas/iconografia/iconos/ambiente-ueb-8.svg', '../descargas/iconografia/iconos/ambiente-ueb-8.png')
+							
+							
+					div.box#sec6
+						h2 Audiencias
+							
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/familia.svg', 'Familia', 'classimg', 'Familia', '../descargas/iconografia/iconos/familia.svg', '../descargas/iconografia/iconos/familia.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/estudiantes.svg', 'Estudiantes', 'classimg', 'Estudiantes', '../descargas/iconografia/iconos/estudiantes.svg', '../descargas/iconografia/iconos/estudiantes.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/docentes.svg', 'Docentes', 'classimg', 'Docentes', '../descargas/iconografia/iconos/docentes.svg', '../descargas/iconografia/iconos/docentes.png')
+							
+							
+					div.box#sec7
+						h2 Apoyo gráfico
+							
+						div.ejemplos.icons
+							+ejemplos('../descargas/iconografia/iconos/excel.svg', 'Excel', 'classimg', 'Excel', '../descargas/iconografia/iconos/excel.svg', '../descargas/iconografia/iconos/excel.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/word.svg', 'Word', 'classimg', 'Word', '../descargas/iconografia/iconos/word.svg', '../descargas/iconografia/iconos/word.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/pdf.svg', 'PDF', 'classimg', 'PDF', '../descargas/iconografia/iconos/pdf.svg', '../descargas/iconografia/iconos/pdf.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/zip.svg', 'ZIP', 'classimg', 'ZIP', '../descargas/iconografia/iconos/zip.svg', '../descargas/iconografia/iconos/zip.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/convenios.svg', 'Convenios', 'classimg', 'Convenios', '../descargas/iconografia/iconos/convenios.svg', '../descargas/iconografia/iconos/convenios.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/programas.svg', 'Programas', 'classimg', 'Programas', '../descargas/iconografia/iconos/programas.svg', '../descargas/iconografia/iconos/programas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/eventos.svg', 'Eventos', 'classimg', 'Eventos', '../descargas/iconografia/iconos/eventos.svg', '../descargas/iconografia/iconos/eventos.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/consulta-horarios.svg', 'Consulta de horarios', 'classimg', 'Consulta de horarios', '../descargas/iconografia/iconos/consulta-horarios.svg', '../descargas/iconografia/iconos/consulta-horarios.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/consulta-disponibilidad.svg', 'Consulta de disponibilidad', 'classimg', 'Consulta de disponibilidad', '../descargas/iconografia/iconos/consulta-disponibilidad.svg', '../descargas/iconografia/iconos/consulta-disponibilidad.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/correo.svg', 'Correo', 'classimg', 'Correo', '../descargas/iconografia/iconos/correo.svg', '../descargas/iconografia/iconos/correo.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/sala.svg', 'Sala', 'classimg', 'Sala', '../descargas/iconografia/iconos/sala.svg', '../descargas/iconografia/iconos/sala.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/campus-virtual.svg', 'Campus Virtual', 'classimg', 'Campus Virtual', '../descargas/iconografia/iconos/campus-virtual.svg', '../descargas/iconografia/iconos/campus-virtual.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/verificacion-informacion-academica.svg', 'Verificación Información Académica', 'classimg', 'Verificación Información Académica', '../descargas/iconografia/iconos/verificacion-informacion-academica.svg', '../descargas/iconografia/iconos/verificacion-informacion-academica.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/planeacion-actividades.svg', 'Planeación de Actividades', 'classimg', 'Planeación de Actividades', '../descargas/iconografia/iconos/planeacion-actividades.svg', '../descargas/iconografia/iconos/planeacion-actividades.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/registro-correos.svg', 'Registro de Correos', 'classimg', 'Registro de Correos', '../descargas/iconografia/iconos/registro-correos.svg', '../descargas/iconografia/iconos/registro-correos.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/el-bosque-te-escucha.svg', 'El Bosque te Escucha', 'classimg', 'El Bosque te Escucha', '../descargas/iconografia/iconos/el-bosque-te-escucha.svg', '../descargas/iconografia/iconos/el-bosque-te-escucha.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/gestion-academica.svg', 'Gestión Académica', 'classimg', 'Gestión Académica', '../descargas/iconografia/iconos/gestion-academica.svg', '../descargas/iconografia/iconos/gestion-academica.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/apps.svg', 'Apps', 'classimg', 'Apps', '../descargas/iconografia/iconos/apps.svg', '../descargas/iconografia/iconos/apps.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/responsabilidad-social.svg', 'Responsabilidad Social', 'classimg', 'Responsabilidad Social', '../descargas/iconografia/iconos/responsabilidad-social.svg', '../descargas/iconografia/iconos/responsabilidad-social.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/innovacion-planeacion.svg', 'Innovación Planeación', 'classimg', 'Innovación Planeación', '../descargas/iconografia/iconos/innovacion-planeacion.svg', '../descargas/iconografia/iconos/innovacion-planeacion.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/plan-de-desarrollo.svg', 'Plan de Desarrollo', 'classimg', 'Plan de Desarrollo', '../descargas/iconografia/iconos/plan-de-desarrollo.svg', '../descargas/iconografia/iconos/plan-de-desarrollo.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/beneficios.svg', 'Beneficios', 'classimg', 'Beneficios', '../descargas/iconografia/iconos/beneficios.svg', '../descargas/iconografia/iconos/beneficios.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/aulas.svg', 'Aulas', 'classimg', 'Aulas', '../descargas/iconografia/iconos/aulas.svg', '../descargas/iconografia/iconos/aulas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/aulas.svg', 'Aulas', 'classimg', 'Aulas', '../descargas/iconografia/iconos/aulas.svg', '../descargas/iconografia/iconos/aulas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/agenda-mensual.svg', 'Agenda Mensual', 'classimg', 'Agenda Mensual', '../descargas/iconografia/iconos/agenda-mensual.svg', '../descargas/iconografia/iconos/agenda-mensual.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/deportes-en-conjunto.svg', 'Deportes en Conjunto', 'classimg', 'Deportes en Conjunto', '../descargas/iconografia/iconos/deportes-en-conjunto.svg', '../descargas/iconografia/iconos/deportes-en-conjunto.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/analisis-estadisticas.svg', 'Análisis de Estadísticas', 'classimg', 'Análisis de Estadísticas', '../descargas/iconografia/iconos/analisis-estadisticas.svg', '../descargas/iconografia/iconos/analisis-estadisticas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/digital.svg', 'Digital', 'classimg', 'Digital', '../descargas/iconografia/iconos/digital.svg', '../descargas/iconografia/iconos/digital.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/dinero.svg', 'Dinero', 'classimg', 'Dinero', '../descargas/iconografia/iconos/dinero.svg', '../descargas/iconografia/iconos/dinero.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/conversacion.svg', 'Conversación', 'classimg', 'Conversación', '../descargas/iconografia/iconos/conversacion.svg', '../descargas/iconografia/iconos/conversacion.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/movilidad.svg', 'Movilidad', 'classimg', 'Movilidad', '../descargas/iconografia/iconos/movilidad.svg', '../descargas/iconografia/iconos/movilidad.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/libros.svg', 'Libros', 'classimg', 'Libros', '../descargas/iconografia/iconos/libros.svg', '../descargas/iconografia/iconos/libros.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/pantallas.svg', 'Pantallas', 'classimg', 'Pantallas', '../descargas/iconografia/iconos/pantallas.svg', '../descargas/iconografia/iconos/pantallas.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/actividades.svg', 'Actividades', 'classimg', 'Actividades', '../descargas/iconografia/iconos/actividades.svg', '../descargas/iconografia/iconos/actividades.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/gestion.svg', 'Gestión', 'classimg', 'Gestión', '../descargas/iconografia/iconos/gestion.svg', '../descargas/iconografia/iconos/gestion.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/actualizacion-documentos.svg', 'Actualización de Documentos', 'classimg', 'Actualización de Documentos', '../descargas/iconografia/iconos/actualizacion-documentos.svg', '../descargas/iconografia/iconos/actualizacion-documentos.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/play-store.svg', 'Play Store', 'classimg', 'Play Store', '../descargas/iconografia/iconos/play-store.svg', '../descargas/iconografia/iconos/play-store.png')
+							
+							+ejemplos('../descargas/iconografia/iconos/app-store.svg', 'App Store', 'classimg', 'App Store', '../descargas/iconografia/iconos/app-store.svg', '../descargas/iconografia/iconos/app-store.png')
+						
+						
+						
+							
+							
+							
+							
+							
+							
+							
+							
+							

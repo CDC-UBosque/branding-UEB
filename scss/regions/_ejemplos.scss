@@ -89,6 +89,37 @@
 	}
 	
 }
+
+.ejemplos-2-col-txt{
+	margin: 2rem auto;
+	max-width: 750px;
+	@include display-grid;
+	@include grid-parent-2-columns (1fr, 1fr);
+	grid-gap: 1rem;
+	
+	>div{
+		//border: 1px solid;
+	}
+	
+	.example_image{
+		display: inline-block;
+		//min-height: 11rem;
+	    padding: 1rem;
+		//max-height: 11rem;
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	.invertido{
+		background: black; 
+	}
+	
+	h3{
+		font-size: 1em;
+		text-align: left;
+	}
+	
+}
 	
 .content-container .content .alert{
 	background: transparentize($heliconia, .7);
@@ -114,6 +145,49 @@
 		@include buton-s-transparent;
 		color: $heliconia;
 		background: $color_brand_white;
+	}
+	
+}
+
+.ejemplos.icons{
+	margin: 2rem 0;
+	@include display-grid;
+	@include grid-parent-8-columns (1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr, 1fr);
+	grid-gap: 1rem;
+	
+	>div{
+		//border: 1px solid;
+	}
+	
+	.classimg{
+		display: inline-block;
+		min-height: initial;
+	    padding: 1rem;
+		max-height: initial;
+	    text-align: center;
+	    width: 100%;
+	}
+	
+	.invertido{
+		background: black; 
+	}
+	
+	h5{
+		text-align: center;
+		word-break: break-word;
+	}
+	
+	.downloads{
+		text-align: center;
+		
+		.download{
+			margin-right: 0;
+			@include button-s-border-green;
+			margin-bottom: .3rem;
+			padding: 3px 13px;
+			word-break: break-all;
+		}
+		
 	}
 	
 }
